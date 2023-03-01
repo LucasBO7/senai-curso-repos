@@ -27,3 +27,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.grid-layout{
+    width: 80%;
+    height: 100%;
+    background-color: red;
+
+    /* Alinhamento central com 10% de margem cada lado */
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+/* --- HEADER --- */
+header{
+    width: 100%;
+    height: 70px;
+}
