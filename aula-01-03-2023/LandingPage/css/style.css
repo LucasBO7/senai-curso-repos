@@ -1,0 +1,29 @@
+/* CORES  */
+.preto{
+    background-color: #010010;
+}
+.azul-escuro{
+    background-color: #080324;
+}
+.roxo-escuro{
+    background-color: #340B65;
+}
+.roxo-claro{
+    background-color: #A259F7;
+}
+.rosa{
+    background-color: #DA40B1;
+}
+.amarelo{
+    background-color: #FFAF00;
+}
+.vermelho{
+    background-color: #F9003D;
+}
+
+/* Reset CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
