@@ -2,45 +2,70 @@
     font-family: BebasNeue-Regular;
     src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }
+@font-face {
+    font-family: CourierPrime-Bold;
+    src: url(../assets/fonts/Courier_Prime/CourierPrime-Bold.ttf);
+}
 
 /* #region CORES */
-.black{
+.black {
     background-color: #010010;
 }
-.dark-bue{
+
+.dark-bue {
     background-color: #080324;
 }
-.dark-purple{
+
+.dark-purple {
     background-color: #340B65;
 }
-.light-purple{
+
+.light-purple {
     background-color: #A259F7;
 }
-.pink{
+
+.pink {
     background-color: #DA40B1;
 }
-.yellow{
+
+.yellow {
     background-color: #FFAF00;
 }
-.red{
+
+.red {
     background-color: #F9003D;
 }
 
 /* #endregion */
-
 /* #region Style Guide */
+
+
 /* Títulos */
-.title-h1{
+.title-h1 {
     font-family: BebasNeue-Regular;
-    color: white;
     font-size: 96px;
+    color: white;
+}
+
+.title-h2{
+    font-family: BebasNeue-Regular;
+    font-size: 64px;
+    color: #F9003D;
+}
+
+.title-h3 {
+    color: #F9003D;
+    font-family: 'CourierPrime-Bold';
+    font-weight: bold;
+    font-size: 53px;
+    text-transform: uppercase;
 }
 
 
 /* #endregion */
 
 /* Reset CSS */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -49,36 +74,71 @@
 }
 
 /* alinhamento central e margem de 10% cada lado */
-.grid-layout{
+.grid-layout {
     width: 80%;
     height: 100%;
+    max-width: 1200px;
 
     /* Alinhamento central com 10% de margem cada lado */
     margin-right: 10%;
     margin-left: 10%;
 }
 
-/* --- HEADER --- */
-header{
+                                                                /* ---- HEADER ---- */
+header {
     width: 100%;
     height: 50px;
+    background-color: #F9003D;
 }
 
-header div{
+/* Cria um flex alinhado ao centro à direita */
+header .header-flex {
     /* Alinha no centro à direita */
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-header div nav{
+/* NAV / div Grupo de Links */
+header nav {
     /* Cria o espaço entre os links */
-       display: flex;
-       justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 
-       width: 591px;
+    width: 591px;
 }
 
-header div nav a{
+/* Links da Header */
+header nav a {
     font-family: "BebasNeue-Regular";
+    text-transform: uppercase;
 }
+
+                                                                /* ---- MAIN ---- */
+                            /* ---- Banner 1 Intro ---- */
+
+/* Box para imagem de fundo */
+#background-img-box{
+    height: 700px;
+    background-image: url(../assets/images/imagem-fundo-banner\ 1.png);
+}
+
+/* Banner Intro */
+main div section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 700px;
+
+    border: 1px solid red;
+}
+
+main div section h1 {
+    width: 550px;
+
+    border-bottom: 1px solid #FFAF00;
+    margin-bottom: 25px;
+}
+
+                            /* ---- Banner 2 Sobre ---- */
