@@ -1,4 +1,9 @@
-/* CORES  */
+@font-face {
+    font-family: BebasNeue-Regular;
+    src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+/* #region CORES */
 .black{
     background-color: #010010;
 }
@@ -21,18 +26,32 @@
     background-color: #F9003D;
 }
 
+/* #endregion */
+
+/* #region Style Guide */
+/* Títulos */
+.title-h1{
+    font-family: BebasNeue-Regular;
+    color: white;
+    font-size: 96px;
+}
+
+
+/* #endregion */
+
 /* Reset CSS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: white;
 }
 
 /* alinhamento central e margem de 10% cada lado */
 .grid-layout{
     width: 80%;
     height: 100%;
-    background-color: red;
 
     /* Alinhamento central com 10% de margem cada lado */
     margin-right: 10%;
@@ -41,18 +60,25 @@
 
 /* --- HEADER --- */
 header{
+    width: 100%;
+    height: 50px;
+}
+
+header div{
     /* Alinha no centro à direita */
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
-    width: 100%;
-    height: 70px;
 }
 
-header nav{
+header div nav{
     /* Cria o espaço entre os links */
        display: flex;
        justify-content: space-between;
-       width: 300px;
+
+       width: 591px;
+}
+
+header div nav a{
+    font-family: "BebasNeue-Regular";
 }
