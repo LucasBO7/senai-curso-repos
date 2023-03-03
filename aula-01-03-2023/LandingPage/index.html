@@ -9,7 +9,7 @@
     <title>Senai - informática</title>
 </head>
 
-<body class="dark-purple">
+<body class="dark-blue">
     <header>
         <div class="grid-layout header-flex">
             <nav>
@@ -23,11 +23,11 @@
 
     <main>
         <section id="background-img-box">
-            <div class="grid-layout">
+            <div class="grid-layout" id="items-flex-box">
                 <!-- Banner Intro -->
-                <div id="items-flex-box">
+                <div>
                     <h1 class="title-h1">Desenvolvimento de sistemas 2023</h1>
-                    <h3 class="title-h3">Senai informática</h3>
+                    <h3 class="title-h4">Senai informática</h3>
                     <img id="img-mouse" src="assets/mouse.svg" alt="Imagem de um mouse">
                 </div>
             </div>
@@ -36,11 +36,21 @@
         <!-- Banner -->
         <section>
             <div class="grid-layout">
-                <!-- Criar um FLEXBOX que ficará em coluna-->
                 <h1 class="title-h2">Sobre os projetos</h1>
-                <figure>
-                    <img width="491px" src="assets/imagem-seção-sobre.png" alt="Imagem pessoa se apresentando">
-                </figure>
+
+                <div id="flex-container">
+                    <!-- FLEXBOX que ficará em coluna, mas quebrado     -->
+                    <article id="item-left">
+                        <figure>
+                            <img width="491px" src="assets/imagem-seção-sobre.png" alt="Imagem pessoa se apresentando">
+                        </figure>
+                    </article>
+    
+                    
+                    <article id="item-right">
+                        <h2 class="title-h5">Participantes</h2>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
