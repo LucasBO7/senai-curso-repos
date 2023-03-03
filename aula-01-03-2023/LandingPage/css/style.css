@@ -126,14 +126,20 @@ header nav a {
 
 /* Banner Intro */
 
+/* Define o tamanho do Banner */
+section{
+    height: 700px;
+}
+
 /* Caixa que realiza flex-box nos itens */
 #items-flex-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
 
-    height: 700px;
-    border: 1px solid red;
+#img-mouse{
+    width: 37.3px;
 }
 
 main section h1 {
