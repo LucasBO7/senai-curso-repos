@@ -118,23 +118,25 @@ header nav a {
                             /* ---- Banner 1 Intro ---- */
 
 /* Box para imagem de fundo */
+/* Box para imagem de fundo */
 #background-img-box{
     height: 700px;
     background-image: url(../assets/images/imagem-fundo-banner\ 1.png);
 }
 
 /* Banner Intro */
-main div section {
+
+/* Caixa que realiza flex-box nos itens */
+#items-flex-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     height: 700px;
-
     border: 1px solid red;
 }
 
-main div section h1 {
+main section h1 {
     width: 550px;
 
     border-bottom: 1px solid #FFAF00;
