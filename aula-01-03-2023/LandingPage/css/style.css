@@ -81,6 +81,21 @@
     color: white;
 }
 
+.text-block{
+    font-family: 'CourierPrime-Bold';
+    font-size: 28px;
+
+    color: #A259F7;
+    border: 1px solid #A259F7;
+    
+    width: 281px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    
+    text-align: center;
+    text-transform: uppercase;
+}
+
 
 /* #endregion */
 
@@ -141,7 +156,11 @@ header nav a {
 /* Box para imagem de fundo */
 #background-img-box {
     height: 700px;
+    width: 100%;
     background-image: url(../assets/images/imagem-fundo-banner\ 1.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom;
 }
 
 /* Banner Intro */
@@ -171,7 +190,7 @@ main #background-img-box h1 {
 
 
 /*                  ----  Banner 2 | Sobre ---- */
-section .grid-layout h1 {
+#banner-about .grid-layout h1 {
     padding-top: 64px;
     padding-bottom: 64px;
 }
@@ -191,4 +210,21 @@ section .grid-layout h1 {
     text-align: left;
 
     width: 592px;
+}
+
+/*                      ---- Banner 3 | Infos ---- */
+#banner-info{
+    height: 200px;
+    margin-top: 119px;
+
+    background-image: url(../assets/imagem-fundo-info.png);
+    background-repeat: repeat-x;
+    
+}
+
+#banner-info div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
