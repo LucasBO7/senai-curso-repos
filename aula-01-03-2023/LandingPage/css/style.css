@@ -112,11 +112,10 @@
 .grid-layout {
     width: 80%;
     height: 100%;
-    max-width: 1200px;
+    max-width: 3200px;
 
     /* Alinhamento central com 10% de margem cada lado */
-    margin-right: 10%;
-    margin-left: 10%;
+    margin: 0 auto;
 }
 
 /*                                                          ---- HEADER ---- */
@@ -227,4 +226,61 @@ main #background-img-box h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+/*                      ---- Banner 4 | Adress ---- */
+
+#banner-adress{
+    background-image: url(../assets/imagem-fundo-endereco.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+#banner-adress div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 516px;
+}
+
+#banner-adress #contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    background-color: #010010;
+    border: 1px solid #340B65;
+    
+    width: 899px;
+    height: 200px;
+
+    position: relative;
+}
+
+#banner-adress h1{
+    width: 899px;
+}
+
+#banner-adress #contents p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: #A259F7;
+    text-align: justify;
+    
+    width: 435px;
+    margin-right: 100px;
+
+    margin: 57px 66px;
+}
+
+#banner-adress #contents img{
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+
+    height: 250px;
+    width: 309px;
 }
