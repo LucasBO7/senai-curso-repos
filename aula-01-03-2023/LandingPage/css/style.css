@@ -110,17 +110,17 @@
     color: white;
 }
 
+
 /* alinhamento central e margem de 10% cada lado */
 .grid-layout {
     width: 80%;
     height: 100%;
     max-width: 3200px;
 
-    /* Alinhamento central com 10% de margem cada lado */
     margin: 0 auto;
 }
 
-body{
+body {
     background-color: #080324;
     color: white;
     font-family: 'Courier New', Courier, monospace;
