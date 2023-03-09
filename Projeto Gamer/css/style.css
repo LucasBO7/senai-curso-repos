@@ -8,6 +8,23 @@
     box-sizing: border-box;
 }
 
+/* #region Style Guide */
+.black{
+    background-color: #1B1426;
+}
+.yellow{
+    background-color: #F9AA01;
+}
+.gray{
+    background-color: #D9D9D9;
+}
+/* #endregion */
+
 body{
-    background-color: blue;
+    background-color: rgb(50, 50, 50);
+}
+
+/*          HEADER           */
+header{
+    background-color: #1b1426;
 }
