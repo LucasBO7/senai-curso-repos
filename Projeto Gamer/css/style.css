@@ -1,30 +1,72 @@
+/* #region Style Guide */
+.black {
+    background-color: #1B1426;
+}
+
+.yellow {
+    background-color: #F9AA01;
+}
+
+.gray {
+    background-color: #D9D9D9;
+}
+
+/* #endregion */
+
 /* Imports de fonts */
 
 /* Reset CSS */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* #region Style Guide */
-.black{
-    background-color: #1B1426;
+/* Classes Genéricas */
+.layout-grid{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px solid salmon;
 }
-.yellow{
-    background-color: #F9AA01;
+
+.alinhamento-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-.gray{
-    background-color: #D9D9D9;
-}
-/* #endregion */
 
 body{
-    background-color: rgb(50, 50, 50);
+    color: white;
+}
+/*                                      MOBILE FIRST                                     */
+
+/* HEADER */
+header {
+    height: 60px;
+    background-color: #1b1426;
 }
 
-/*          HEADER           */
-header{
-    background-color: #1b1426;
+header .header-top {
+    display: none;
+}
+header .header-bottom{
+    height: 60px;
+}
+header .logo{
+    width: 86px;
+}
+header nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80vw;
+    height: 100vh;
+    background-color: gray;
+
+    display: flex;
+    flex-direction: column;
+}
+header .menu-usuarios {
+    display: none;
 }
