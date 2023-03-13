@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(../assets/fonts/Inter/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url(../assets/fonts/Quicksand/static/Quicksand-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Titillium-web-Black';
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+
+
 /* #region Style Guide */
 .black {
     background-color: #1B1426;
@@ -11,6 +27,12 @@
     background-color: #D9D9D9;
 }
 
+
+.inter-regular-small {
+    font-family: 'Inter-Regular';
+    font-size: 15px;
+}
+
 /* #endregion */
 
 /* Imports de fonts */
@@ -20,25 +42,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: white;
 }
 
-/* Classes Genéricas */
-.layout-grid{
+/*      Classes Genéricas        */
+.layout-grid {
     width: 90%;
     height: 100%;
     margin: 0 auto;
     border: 1px solid salmon;
 }
-
-.alinhamento-between-center{
+/* Alinha os itens ao centro com espaço entre seus elementos */
+.alinhamento-between-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-body{
+body {
     color: white;
 }
+
 /*                                      MOBILE FIRST                                     */
 
 /* HEADER */
@@ -46,27 +71,62 @@ header {
     height: 60px;
     background-color: #1b1426;
 }
-
+/* Parte de cima da Header */
 header .header-top {
     display: none;
 }
-header .header-bottom{
+/* Parte de baixo da Header */
+header .header-bottom {
     height: 60px;
 }
-header .logo{
+/* Logotipo */
+header .logo {
     width: 86px;
 }
+
+/* Header BOX */
 header nav {
     position: fixed;
     top: 60px;
     left: 0;
-    width: 80vw;
-    height: 100vh;
-    background-color: gray;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    
+    width: 80vw;
+    height: calc(100vh - 60px);
+    padding-bottom: 20px;
+
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
 }
+
+/* Links parentes direto da Header BOX */
+header .header-bottom nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    
+    border-bottom: 2px solid #F9AA01;
+}
+
+header .header-bottom nav p{
+    font-size: 10px;
+}
+
+header .header-bottom nav a:last-of-type {
+    border: none;
+}
+
+header .header-bottom nav .midias-sociais{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
 header .menu-usuarios {
     display: none;
 }
