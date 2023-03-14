@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/others/font-imports">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -83,11 +85,11 @@
                 </nav>
 
                 <!-- menu 3 pontinhos -->
-                <img onclick="mostrarMenuUsuarios()" src="assets/icons/pointers.svg" alt="Ícone 3 pontinhos, abre e fecha o menu de usuários">
+                <img src="assets/icons/pointers.svg" alt="Ícone 3 pontinhos, abre e fecha o menu de usuários">
 
-                <div id="menu-usuarios" class="menu-usuarios">
+                <div class="menu-usuarios">
                     <a href="">
-                        <img src="assets/icons/icone_conta_com_borda.svg" alt="Ícone de perfil">
+                        <img src="assets/icons/icone_conta.svg" alt="Ícone de perfil">
                     </a>
                     <a href="">
                         <img src="assets/icons/icone_sacola_compras.svg" alt="Ícone de sacola de compras">
@@ -102,9 +104,11 @@
 
     <main>
         <!-- Home Section -->
-        <section>
-            <h1>Liga Gamers</h1>
-            <button>Sobre</button>
+        <section id="home-banner">
+            <div class="layout-grid">
+                <h1 class="titillium-black-big">Liga Gamers</h1>
+                <button class="btn-yellow">Sobre</button>
+            </div>
         </section>
 
         <!-- Destaques Section -->
@@ -156,7 +160,8 @@
                 <img src="" alt="">
                 <h3>Título da Notícia</h3>
 
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since.</p>
             </article>
         </section>
     </main>
@@ -164,18 +169,12 @@
     <footer>
 
     </footer>
-
-    <script>
-        function mostrarMenu(){
-            // Pega a navbar pelo id e insere uma formatação CSS
-            document.getElementById("menu").classList.toggle("mostrar-menu")
-        }
-
-        function mostrarMenuUsuarios(){
-            document.getElementById("menu-usuarios").classList.toggle("mostrar-menu-usuarios")
-        }
-    </script>
-    
 </body>
 
 </html>
+
+<script>
+    mostrarMenu => function () {
+
+    }
+</script>

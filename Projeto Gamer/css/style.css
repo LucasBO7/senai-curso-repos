@@ -51,8 +51,17 @@
     width: 90%;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
 }
+
+.mostrar-menu {
+    left: 0 !important;
+}
+
+.mostrar-menu-usuarios{
+    right: 0 !important;
+}
+
 /* Alinha os itens ao centro com espaço entre seus elementos */
 .alinhamento-between-center {
     display: flex;
@@ -68,17 +77,23 @@ body {
 
 /* HEADER */
 header {
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
     height: 60px;
     background-color: #1b1426;
 }
+
 /* Parte de cima da Header */
 header .header-top {
     display: none;
 }
+
 /* Parte de baixo da Header */
 header .header-bottom {
     height: 60px;
 }
+
 /* Logotipo */
 header .logo {
     width: 86px;
@@ -88,32 +103,35 @@ header .logo {
 header nav {
     position: fixed;
     top: 60px;
-    left: 0;
+    left: -80vw;
 
+    z-index: 2;
     display: flex;
+    /* flex */
     flex-direction: column;
-    
+
     width: 80vw;
     height: calc(100vh - 60px);
     padding-bottom: 20px;
 
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
+    transition: left 0.7s ease;
 }
 
 /* Links parentes direto da Header BOX */
-header .header-bottom nav > a {
+header .header-bottom nav>a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     padding: 30px;
-    
+
     border-bottom: 2px solid #F9AA01;
 }
 
 /* diminui o tamanho de algumas informações impostas no menu */
-header .header-bottom nav p{
+header .header-bottom nav p {
     font-size: 10px;
 }
 
@@ -123,17 +141,36 @@ header .header-bottom nav a:last-of-type {
 }
 
 /* ícones redes sociais */
-header .header-bottom nav .midias-sociais{
+header .header-bottom nav .midias-sociais {
     position: absolute;
     bottom: 20px;
     left: 0;
     width: 100%;
+
 
     display: flex;
     justify-content: space-around;
     align-items: baseline;
 }
 
-header .menu-usuarios {
-    display: none;
+/* Adiciona Menu-usuarios */
+header .header-bottom .menu-usuarios {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 60px;
+    right: -20vw;
+
+    height: 170px;
+    width: 20vw;
+    padding: 14px;
+
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    
+    transition: right 0.5s ease-out;
 }
