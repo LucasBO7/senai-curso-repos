@@ -40,6 +40,18 @@
     font-size: 40px;
     text-shadow: 0 0 7px red;
 }
+.titillium-black-small{
+    font-family: 'Titillium-web-Black';
+    font-size: 18px;
+    color: #1B1426;
+    text-transform: uppercase;
+}
+
+.titillium-bold-small{
+    font-family: 'Titillium-web-Bold';
+    font-size: 16px;
+    color: black;
+}
 
 /* Botoes */
 .btn-yellow{
@@ -101,8 +113,9 @@ main {
     padding-bottom: 86px;
 
     background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.svg);
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #home-banner div {
@@ -111,3 +124,90 @@ main {
     justify-content: space-between;
     align-items: center;
 }
+
+/* Destaques Banner */
+
+#destaques-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 69px;
+    height: 590px;
+
+    background-color: #1B1426;
+}
+
+/* VERSAO MANUAL
+
+#destaques-banner article div{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+    width: 100%;
+    height: 50px;
+    
+    background-color: rgba(255, 255, 255, 0.641);
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 8px;
+}
+#destaques-banner article div #text-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 27px;
+    width: 200px;
+    height: 40px;
+    border-radius: 0;
+    
+    background-color: #F9AA01;
+    transform: skew(-30deg);
+} */
+
+
+
+/* Services Banner */
+#services-banner{
+    padding: 84px 0;
+    height: 1535px;
+
+    background-color: #F9AA01;
+}
+
+#services-banner h2{
+    letter-spacing: 2px;
+    padding-bottom: 46px;
+    border-bottom: 2px solid #1B1426;
+}
+
+.card{
+
+    
+    background-color: red;
+}
+#services-banner #card-1{
+    width: 314px;
+    height: 511px;
+    
+    background-image: url(../assets/images/personagem-jogo-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#services-banner #card-2{
+    width: 322px;
+    height: 428px;
+    
+    background-image: url(../assets/images/personagem-jogo-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+

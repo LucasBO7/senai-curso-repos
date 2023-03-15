@@ -12,6 +12,10 @@
     font-family: 'Titillium-web-Black';
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
+@font-face {
+    font-family: 'Titillium-web-Bold';
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
 
 
 /* #region Style Guide */
@@ -32,10 +36,33 @@
     font-family: 'Inter-Regular';
     font-size: 15px;
 }
+.titillium-black-big {
+    font-family: 'Titillium-web-Black';
+    font-size: 40px;
+    text-shadow: 0 0 7px #FD4255;
+}
+
+
+/* Botoes */
+.btn-yellow{
+    width: 203px;
+    height: 40px;
+
+    background-color: #F9AA01;
+    color: black;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: 'Titillium-web-Bold';
+    font-size: 24px;
+    text-align: center;
+}
+
 
 /* #endregion */
 
-/* Imports de fonts */
+
 
 /* Reset CSS */
 * {
@@ -45,6 +72,9 @@
     text-decoration: none;
     color: white;
 }
+
+
+
 
 /*      Classes Genéricas        */
 .layout-grid {
@@ -69,15 +99,25 @@
     align-items: center;
 }
 
+
+
+main{
+    padding-top: 60px;
+}
+
 body {
     color: white;
 }
+
+
 
 /*                                      MOBILE FIRST                                     */
 
 /* HEADER */
 header {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     z-index: 1;
     height: 60px;
@@ -174,3 +214,52 @@ header .header-bottom .menu-usuarios {
     
     transition: right 0.5s ease-out;
 }
+
+
+
+/* Home Banner */
+#home-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding-top: 20px;
+    padding-bottom: 86px;
+    width: 100%;
+    height: 606px;
+
+    border-top: #F9AA01;
+    background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+/* Destaques Banner */
+
+main #destaques-banner{
+    width: 100%;
+    height: 590px;
+    background-color: #1B1426;
+}
+
+main #destaques-banner .destaques-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+/* Tables >= 768px */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* Desktop >= 1200px */
+@media screen and (min-width: 768px) {
+    
+}
+
+
