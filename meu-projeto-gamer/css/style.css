@@ -186,8 +186,6 @@ main {
 }
 
 .card{
-
-    
     background-color: red;
 }
 #services-banner #card-1{
@@ -207,6 +205,19 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+}
+#services-banner .card article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding: 28px;
+    width: 231px;
+    height: 300px;
+    
+    background-image: linear-gradient(to right bottom, #7A31EC 20%, #2F076D 83% );
+    border-radius: 8px;
 }
 
 
