@@ -259,7 +259,30 @@ main #destaques-banner .destaques-flex{
 
 /* Desktop >= 1200px */
 @media screen and (min-width: 768px) {
-    
+    .layout-grid {
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    /* esconde os elementos desnecessários */
+    header .header-bottom .menu-hamburger,
+    header .header-bottom .menu-pontinhos,
+    header .header-bottom nav .phone,
+    header .header-bottom nav .mail,
+    header .header-bottom nav .midias-sociais {
+        display: none;
+    }
+
+
+    header .header-bottom nav {
+        position: static;
+        width: 440px;
+        height: 50px;
+        flex-direction: row;
+        align-items: center;
+        background-color: red;
+        justify-content: space-between;
+    }
 }
 
 
