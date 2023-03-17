@@ -9,7 +9,7 @@
 }
 
 @font-face {
-    font-family: 'Titillium-web-Black';
+    font-family: 'titillium-web-Black';
     src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
 }
 @font-face {
@@ -34,12 +34,13 @@
 
 .inter-regular-small {
     font-family: 'Inter-Regular';
-    font-size: 15px;
+    font-size: 14px;
 }
 .titillium-black-big {
-    font-family: 'Titillium-web-Black';
+    font-family: 'titillium-web-Black';
     font-size: 40px;
     text-shadow: 0 0 7px #FD4255;
+    text-transform: uppercase;
 }
 
 
@@ -63,20 +64,15 @@
 /* #endregion */
 
 
-
 /* Reset CSS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    color: white;
 }
 
-
-
-
-/*      Classes Genéricas        */
+/* Classes Genéricas */
 .layout-grid {
     width: 90%;
     height: 100%;
@@ -88,11 +84,11 @@
     left: 0 !important;
 }
 
-.mostrar-menu-usuarios{
+.mostrar-usuarios {
     right: 0 !important;
 }
 
-/* Alinha os itens ao centro com espaço entre seus elementos */
+/* justify content + align items */
 .alinhamento-between-center {
     display: flex;
     justify-content: space-between;
@@ -100,18 +96,11 @@
 }
 
 
-
-main{
-    padding-top: 60px;
-}
-
 body {
     color: white;
 }
 
-
-
-/*                                      MOBILE FIRST                                     */
+/* Mobile First */
 
 /* HEADER */
 header {
@@ -119,156 +108,152 @@ header {
     top: 0;
     left: 0;
     width: 100vw;
-    z-index: 1;
     height: 60px;
-    background-color: #1b1426;
+    z-index: 100;
+    background-color: #1B1426;
 }
 
-/* Parte de cima da Header */
 header .header-top {
     display: none;
 }
 
-header .header-top .contatos{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 450px;
-    border: 2px solid #FD4255;
-}
-
-header .header-top .contatos > div{
-    display: flex;
-    gap: 10px;
-    width: 200px;
-    border-bottom: 2px solid #F9AA01;
-}
-
-header .header-top .midias-sociais{
-    border: 2px solid #FD4255;
-}
-
-/* Parte de baixo da Header */
 header .header-bottom {
     height: 60px;
 }
 
-/* Logotipo */
 header .logo {
     width: 86px;
 }
 
-/* Header BOX */
-header nav {
+
+header .header-bottom nav {
     position: fixed;
     top: 60px;
     left: -80vw;
-
-    z-index: 2;
+    z-index: 101;
     display: flex;
-    /* flex */
     flex-direction: column;
-
+    /* justify-content: space-between; */
     width: 80vw;
     height: calc(100vh - 60px);
     padding-bottom: 20px;
-
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
-    transition: left 0.7s ease;
+
+    transition: left 0.4s;
 }
 
-/* Links parentes direto da Header BOX */
+
 header .header-bottom nav>a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 30px;
-
+    padding: 30px 0;
+    color: white;
+    font-size: 15px;
+    font-family: Inter;
+    text-decoration: none;
     border-bottom: 2px solid #F9AA01;
+    font-family: 'Inter-Regular';
+    font-size: 14px;
 }
 
-/* diminui o tamanho de algumas informações impostas no menu */
-header .header-bottom nav p {
-    font-size: 10px;
-}
-
-/* aplica formatação no primeiro item dos links do menu */
 header .header-bottom nav a:last-of-type {
-    border: none;
+    border-bottom: none;
 }
 
-/* ícones redes sociais */
 header .header-bottom nav .midias-sociais {
     position: absolute;
     bottom: 20px;
     left: 0;
     width: 100%;
 
-
     display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
 }
 
-/* Adiciona Menu-usuarios */
-header .header-bottom .menu-usuarios {
-    /* display: none; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
+header .menu-usuarios {
     position: fixed;
     top: 60px;
     right: -20vw;
-
-    height: 170px;
     width: 20vw;
-    padding: 14px;
+    height: 170px;
 
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.7), rgba(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
-    
-    transition: right 0.5s ease-out;
+
+    transition: right 0.4s;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
+/* MAIN */
 
-/* Home Banner */
-#home-banner{
+main {
+    margin-top: 60px;
+}
+
+/* Banner */
+
+main .banner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    
-    padding-top: 20px;
-    padding-bottom: 86px;
     width: 100%;
     height: 606px;
-
-    border-top: #F9AA01;
+    padding-top: 20px;
+    padding-bottom: 40px;
     background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.png);
     background-size: cover;
-    background-position: top;
+    background-position: bottom;
     background-repeat: no-repeat;
 }
 
+main .banner h1 {
+    font-family: 'titillium-web-Black';
+    font-size: 80px;
+    text-shadow: 0 0 7px #FD4255;
+    text-transform: initial;
+}
 
-/* Destaques Banner */
+main .banner a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 40px;
+    font-family: TitilliumWeb-Bold;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    background-color: #F9AA01;
+    border-radius: 8px;
+}
 
-main #destaques-banner{
+/* Sessão Jogos */
+
+main .jogos {
     width: 100%;
     height: 590px;
     background-color: #1B1426;
 }
 
-main #destaques-banner .destaques-flex{
+main .jogos .jogos-flex {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+
+
 
 
 /* Tables >= 768px */
@@ -284,12 +269,42 @@ main #destaques-banner .destaques-flex{
     }
 
     header{
+        position: static;
         height: 140px;
+        width: 100%;
     }
 
     header .header-top{
         display: block;
+        height: 50px;
         border-bottom: 2px solid #F9AA01;
+    }
+
+    header .header-top .contatos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 450px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400px;
+        /* border: 2px solid #FD4255; */
+    }
+
+    /* divs .phone, .mail */
+    header .header-top .contatos > a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 200px;
+        /* border-bottom: 2px solid #F9AA01; */
+    }
+
+    header .header-top .midias-sociais{
+        display: flex;
+        justify-content: space-between;
+        width: 140px;
+        /* border-bottom: 2px solid #F9AA01; */
     }
 
     /* esconde os elementos desnecessários */
@@ -299,6 +314,10 @@ main #destaques-banner .destaques-flex{
     header .header-bottom nav .mail,
     header .header-bottom nav .midias-sociais {
         display: none;
+    }
+
+    header .header-bottom{
+        height: 90px;
     }
 
     header .logo{
@@ -325,10 +344,36 @@ main #destaques-banner .destaques-flex{
         position: static;
         width: 140px;
         flex-direction: row;
+        justify-content: space-between;
         height: auto;
         background-color: transparent;
         background-image: none;
     }
+
+    main{
+        margin-top: 0;
+    }
+
+    main .banner{
+        height: 722px;
+        background-image: url(../assets/images/Banner_background_1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+    main .jogos .jogos-flex{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+    }
+
+    main .jogos img{
+        width: 556px;
+        height: 313px;
+    }
+
 }
 
 
