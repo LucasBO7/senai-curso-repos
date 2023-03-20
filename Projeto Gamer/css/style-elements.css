@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url(../assets/fonts/Inter/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url(../assets/fonts/Quicksand/static/Quicksand-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'titillium-web-Black';
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Black.ttf);
+}
+@font-face {
+    font-family: 'Titillium-web-Bold';
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+
+/* #region Style Guide */
+.black {
+    background-color: #1B1426;
+}
+
+.yellow {
+    background-color: #F9AA01;
+}
+
+.gray {
+    background-color: #D9D9D9;
+}
+
+
+.inter-regular-small {
+    font-family: 'Inter-Regular';
+    font-size: 14px;
+}
+.titillium-black-big {
+    font-family: 'titillium-web-Black';
+    font-size: 40px;
+    text-shadow: 0 0 7px #FD4255;
+    text-transform: uppercase;
+}
+
+
+/* Botoes */
+.btn-yellow{
+    width: 203px;
+    height: 40px;
+
+    background-color: #F9AA01;
+    color: black;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: 'Titillium-web-Bold';
+    font-size: 24px;
+    text-align: center;
+}
+/* #endregion */
