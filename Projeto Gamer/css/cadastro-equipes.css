@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: white;
 }
 
 /* Classes Genéricas */
@@ -43,10 +45,14 @@ body {
 
 
 /* Main MOBILE*/
-main{
-    margin-top: 60px;
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     height: 1231px;
-    
+
     background-image: url(../assets/images/banner_cadastro_de_equipe.png);
     background-size: cover;
     background-position: bottom;
@@ -64,6 +70,8 @@ main form {
 
     padding-top: 50px;
     padding-bottom: 76px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
     width: 335px;
     height: 462px;
 
@@ -83,6 +91,35 @@ main form::before {
     backdrop-filter: blur(4px);
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38));
 }
+
+/* Titulo */
+main form .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main form hr {
+    size: 3px;
+    width: 250px;
+    color: #F9AA01;
+}
+
+/* Inputs */
+main form #inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 168px;
+}
+
+/* Documents Input */
+
+
+
+/* Tabela */
 
 
 

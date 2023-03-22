@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/cadastro-equipes.css">
+    <link rel="stylesheet" href="css/style-elements.css">
     <title>Document</title>
 </head>
 <body>
@@ -48,9 +50,9 @@
                     alt="Imagem logotipo gamer com um controle de vídeo game ao centro">
 
                 <nav class="menu" id="menu">
-                    <a href="">Início</a>
+                    <a href="index.html">Início</a>
                     <a href="">Jogadores</a>
-                    <a href="">Equipes</a>
+                    <a href="cadastro-equipes.html">Equipes</a>
                     <a href="">Notícias</a>
 
                     <!-- vísível apenas no mobile -->
@@ -98,11 +100,100 @@
 
     <main>
         <form action="">
-            
+            <div class="title">
+                <h1 class="titillium-black-medium">Cadastro de equipes</h1>
+                <hr>
+            </div>
+
+            <div id="inputs">
+                <input type="text" id="equipe-id-input" placeholder="Digite o Id da sua equipe:">
+                <input type="text" id="equipe-nome-input" placeholder="Digite o nome da sua equipe:">
+                <input type="file" title="Imagem da equipe">
+            </div>
+           
+           <button class="btn-yellow">Cadastro</button>
         </form>
+
+        <table class="bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Foto</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Loud</td>
+                    <td> <img src="assets/images/" alt=""> </td>
+                    <td> <img src="assets/icons/icone_lixeira.svg" alt=""> </td>
+                </tr>
+            </tbody>
+        </table>
+        
     </main>
 
     <footer>
+        <div class="layout-grid flex-footer">
+            <div id="infos-container">
+                <img src="assets/images/logotipo-gamer.svg" alt="Imagem do logotipo do Site: Gamer com um controle no lugar da letra A">
+
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e altamente comprometida.</p>
+
+                <div class="midias-sociais-container">
+                    <a href="">
+                        <img src="assets/icons/icone_facebook_footer.svg" alt="Imagem link do facebook da página">
+                    </a>
+
+                    <a href="">
+                        <img src="assets/icons/icone_linkedin_footer.svg" alt="Imagem link do linkedin da página">
+                    </a>
+
+                    <a href="">
+                        <img src="assets/icons/icone_intagram_footer.svg" alt="Imagem link do instagram da página">
+                    </a>
+                </div>
+            </div>
+
+            <div id="links-uteis-container">
+                <div class="titulo-linha">
+                    <h1>Links Úteis</h1>
+                    <hr>
+                </div>
+
+                <div id="links" class="titillium-regular-small">
+                    <ul>
+                        <li> <a href="">Início</a> </li>
+                        <li> <a href="">Jogadores</a> </li>
+                        <li> <a href="">Notícias</a> </li>
+                        <li> <a href="">Login</a> </li>
+                        <li> <a href="">Equipes</a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contatos-container">
+                <div class="titulo-linha">
+                    <h1>Links Úteis</h1>
+                    <hr>
+                </div>
+
+                <div class="titillium-bold-small">
+                    <p class="contatos-titulo">Localização</p>
+                    <p class="contatos-info">Rua Niterói, 180 - São Caetano do Sul - SP</p>
+                
+                    <p class="contatos-titulo">Junte-se a nós</p>
+                    <p class="contatos-info">contato@gamer.com.br</p>
+                    
+                    <p class="contatos-titulo">Telefone:</p>
+                    <p class="contatos-info">(11) 0900-1010</p>
+                </div>
+            </div>
+            
+
+        </div>
     </footer>
 
     <script>
