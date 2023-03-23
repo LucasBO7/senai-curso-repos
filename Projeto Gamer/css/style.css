@@ -42,6 +42,30 @@
     text-shadow: 0 0 7px #FD4255;
     text-transform: uppercase;
 }
+.quicksand-white-small{
+    font-family: 'Quicksand-Regular';
+    font-size: 13px;
+}
+.titillium-black-small{
+    font-family: 'Titillium-web-Black';
+    font-size: 18px;
+    color: #1B1426;
+    text-transform: uppercase;
+}
+.titillium-white-small{
+    font-family: 'Titillium-web-Black';
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 6 #C6A5E5;
+}
+
+.titillium-bold-small{
+    font-family: 'Titillium-web-Bold';
+    font-size: 16px;
+    color: black;
+}
+
 
 
 /* Botoes */
@@ -158,6 +182,155 @@ main .jogos .jogos-flex {
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+/* Services Banner */
+#services-banner{
+    padding: 84px 0;
+    height: 1535px;
+
+    background-color: #F9AA01;
+}
+
+#services-banner h2{
+    letter-spacing: 2px;
+    padding-bottom: 46px;
+    border-bottom: 2px solid #1B1426;
+}
+
+/* Cards & Images */
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    height: 1300px;
+    width: 336px;
+}
+#services-banner #card-image{
+    position: relative;
+    width: 314px;
+    height: 511px;
+    
+    background-image: url(../assets/images/personagem-jogo-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#services-banner #card-image-2{
+    position: relative;
+    align-self: center;
+    width: 322px;
+    height: 428px;
+    
+    background-image: url(../assets/images/personagem-jogo-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#services-banner .cards article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    padding: 26px;
+    width: 231px;
+    height: 300px;
+    
+    background-image: linear-gradient(to right bottom, rgba(122, 49, 236, 0.2), rgba(47, 7, 109, 0.83));
+    backdrop-filter: blur(15px);
+    border-radius: 8px;
+}
+#services-banner article p{
+    text-align: justify;
+}
+#card-1{
+    position: absolute;
+    top: 105px;
+    right: -22px;
+}
+#card-2{
+    position: absolute;
+    left: -13px;
+    bottom: 13px;
+}
+
+
+
+/* News Banner */
+#news-banner{
+    height: 3675px;
+    
+    background-image: url(../assets/images/backgrund_notícias.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+/* Container do total de cards */
+#news-banner #flex-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Título */
+#news-banner #news-title{
+    text-align: center;
+    padding-bottom: 40px;
+    margin: 72px 0;
+    width: 204px;
+    
+    border-bottom: 2px solid #F9AA01;
+}
+
+/* Card */
+#news-banner .card{
+    width: 335px;
+    height: 387px;
+    
+    background-image: linear-gradient(to bottom right, rgba(37, 26, 52, 0.34), rgba(5, 1, 12, 0.79));
+    border-radius: 8px;
+}
+#news-banner .card img{
+    width: 100%;
+    height: 174px;
+}
+
+#news-banner .card div{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    
+    padding: 16px 26px;
+    gap: 26px;
+    height: 210px;
+    padding-left: 25px;
+    /* background-color: red; */
+}
+#news-banner .card div h2{
+    font-family: 'Titillium-web-Bold';
+    font-size: 24px;
+}
+#news-banner .card div p{
+    font-family: 'Quicksand-Regular';
+    font-size: 16px;
+}
+
+
+
+
+/* Footer */
+#color-transitor{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 212px;
+    
+    background-image: linear-gradient(to bottom, rgba(0, 0, 2, 1.0), rgba(67, 3, 99, 0.03));
+}
+
 
 
 
