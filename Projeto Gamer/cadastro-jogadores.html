@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Gamer Tarde</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style-elements.css">
+    <link rel="stylesheet" href="css/cadastro-jogadores.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/style-elements.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <title>Cadastro Jogadores - Gamer</title>
 </head>
 
 <body>
@@ -100,147 +102,72 @@
     </header>
 
     <main>
-        <!-- Intro Section -->
-        <article class="banner">
-            <h1>Liga Gamers</h1>
-            <a href="" class="btn-sobre">Sobre</a>
-        </article>
-
-        <!-- Jogos Section -->
-        <section class="jogos">
-            <div class="layout-grid jogos-flex">
-                <img src="assets/images/Group 3.png" alt="Imagem do jogo Fifa 2023">
-                <img src="assets/images/csgo-ultimo-jogo.png" alt="Imagem do jogo Counter Strike">
-            </div>
-        </section>
-
-        <!-- Serviços Section -->
-        <section id="services-banner">
-            <div class="layout-grid">
-                <h2 class="titillium-black-small">Entre para o time programer</h2>
-
-                <!-- Card 1 -->
-                <div class="cards">
-                    <div id="card-image">
-                        <article id="card-1">
-                            <img src="assets/images/purple-controler.png"
-                                alt="Imagem de um Controle transparente com borda roxa">
-                            <h3 class="titillium-white-small">20 Jogos diferentes</h3>
-
-                            <p class="quicksand-white-small">São mais de 20 jogos em 2 plataformas dispóniveis para que
-                                você possa aprender melhores
-                                técnicas.</p>
-                        </article>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div id="card-image-2">
-                        <article id="card-2">
-                            <img src="assets/images/purple-gamer.png"
-                                alt="Imagem de um Boneco transparente com fone de uvido e controle com borda roxa">
-                            <h3 class="titillium-white-small">53 Professores</h3>
-
-                            <p class="quicksand-white-small">Temos 53 Proplayers no nosso time para ensinar todas as es-
-                                tratégias, você vai
-                                aprender do
-                                básico ao avançado. Tempo de treinamento, des- canso, equipamentos.</p>
-                        </article>
-                    </div>
+        <div class="layout-grid">
+            <!-- Formulario -->
+            <form action="">
+                <div class="title">
+                    <h1 class="titillium-black-medium">Cadastro de Jogadores</h1>
+                    <hr>
                 </div>
-            </div>
-        </section>
 
-        <!-- Notícias Section -->
-        <section id="news-banner">
-            <div class="layout-grid" id="flex-cards">
-                <article id="news-title">
-                    <h1 class="titillium-white-small">Notícia</h1>
-                </article>
+                <div id="inputs">
+                    <input type="text" placeholder="Digite o Id do jogador:">
+                    <select name="" id="">
+                        <option value="">Equipe 1</option>
+                        <option value="">Equipe 2</option>
+                        <option value="">Equipe 3</option>
+                    </select>
+                    <input type="text" placeholder="Digite o nome do Jogador:">
+                    <input type="text" placeholder="Digite o Email do Jogador:">
+                    <input type="text" placeholder="Digite a Senha:">
+                </div>
+                <button class="btn-yellow">Cadastrar</button>
+            </form>
 
-                <article class="card">
-                    <img src="assets/images/VCT-eSports 1.png" alt="">
-                    <div>
-                        <h2>Título da Notícia</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="table-id-element">Id</th>
+                        <th class="table-nome-element">Nome</th>
+                        <th class="table-email-element">Email</th>
+                        <th class="table-acoes-element"> </th>
+                    </tr>
+                </thead>
 
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since.</p>
-                    </div>
-                </article>
+                <tbody>
+                    <tr>
+                        <td class="table-id-element">1</td>
+                        <td class="table-nome-element">João</td>
+                        <td class="table-email-element">joao@gmail.com</td>
+                        <td class="table-acoes-element"> <img src="assets/icons/icone_lixeira.svg" alt=""> </td>
+                    </tr>
+                    <tr>
+                        <td class="table-id-element">1</td>
+                        <td class="table-nome-element">João</td>
+                        <td class="table-email-element">joao@gmail.com</td>
+                        <td class="table-acoes-element"> <img src="assets/icons/icone_lixeira.svg" alt=""> </td>
+                    </tr>
+                    <tr>
+                        <td class="table-id-element">1</td>
+                        <td class="table-nome-element">João</td>
+                        <td class="table-email-element">joao@gmail.com</td>
+                        <td class="table-acoes-element"> <img src="assets/icons/icone_lixeira.svg" alt=""> </td>
+                    </tr>
+                    <tr>
+                        <td class="table-id-element">1</td>
+                        <td class="table-nome-element">João</td>
+                        <td class="table-email-element">joao@gmail.com</td>
+                        <td class="table-acoes-element"> <img src="assets/icons/icone_lixeira.svg" alt=""> </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
 
-                <article class="card">
-                    <img src="assets/images/VCT-eSports 1 (1).png" alt="">
-                    <div>
-                        <h2>Título da Notícia</h2>
-
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since.</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="assets/images/VCT-eSports 1 (2).png" alt="">
-                    <div>
-                        <h2>Título da Notícia</h2>
-
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since.</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="assets/images/VCT-eSports 1 (3).png" alt="">
-                    <div>
-                        <h2>Título da Notícia</h2>
-
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since.</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="assets/images/VCT-eSports 1 (2).png" alt="">
-                    <div>
-                        <h2>Título da Notícia</h2>
-
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since.</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="assets/images/VCT-eSports 1 (3).png" alt="">
-                    <div>
-                        <h2>Título da Notícia</h2>
-
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since.</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="assets/images/VCT-eSports 1.png" alt="">
-                    <div>
-                        <h2>Título da Notícia</h2>
-
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since.</p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="assets/images/VCT-eSports 1 (1).png" alt="">
-                    <div>
-                        <h2>Título da Notícia</h2>
-
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the industry's standard dummy text ever since.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
     </main>
 
     <footer>
+        <div id="section-transition"></div>
         <div id="color-transitor"></div>
         <div class="layout-grid flex-footer">
             <div id="infos-container">
@@ -322,8 +249,6 @@
 
         </div>
     </footer>
-
-
 
     <script>
 

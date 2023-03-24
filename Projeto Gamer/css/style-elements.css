@@ -81,10 +81,11 @@
 }
 
 /* Inputs de Texto */
-input[type="text"]{
+input[type="text"], input[type="select"]{
     font-family: 'titillium-Regular';
     font-size: 16px;
     
+    outline: none;
     padding: 0 15px;
     height: 40px;
     width: 273px;
@@ -96,9 +97,14 @@ input[type="text"]{
     /* border-image-slice: 1; */
     backdrop-filter: blur(4px);
 }
-input[type="text"]::placeholder{
+input[type="text"]::placeholder, input[type="select"]::placeholder{
     color: white;
 }
+/* Input Select */
+input[type="select"] option {
+    background-color: darkblue;
+}
+
 
 /* #endregion */
 
@@ -230,4 +236,124 @@ main form::before {
     border-radius: 8px;
     backdrop-filter: blur(4px);
     background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38));
+}
+
+/* Titulo */
+main form .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main form hr {
+    size: 3px;
+    width: 250px;
+    border: 2px solid #F9AA01;
+}
+
+
+/* Tabelas */
+
+table {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 151px;
+    width: 336px;
+    height: 410px;
+
+    color: white;
+
+    font-family: 'titillium-web-Black';
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+/* Table Header */
+table thead {
+    display: flex;
+    align-items: center;
+
+    height: 51px;
+    padding-left: 10px;
+    padding-right: 7px;
+
+    margin-bottom: 19px;
+    border-bottom: 3px solid #F9AA01;
+}
+
+table thead th {
+    color: #F9AA01;
+    text-shadow: 0 0 6px black;
+}
+
+table .table-id-element {
+    width: 37px;
+}
+
+table .table-nome-element {
+    width: 145px;
+}
+
+table .table-foto-element {
+    width: 75px;
+    height: 33px;
+}
+
+table .table-acoes-element {
+    width: 49px;
+    height: 33px;
+}
+
+
+/* Table Body */
+
+table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+table tbody tr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 7px;
+    width: 100%;
+    height: 70px;
+
+    font-family: 'titillium-web-Bold';
+}
+
+table tbody tr::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 8px;
+    background-image: linear-gradient(90deg, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38));
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+
+}
+
+table tbody tr td {
+    height: 33px;
+    border-right: 3px solid #F9AA01;
+}
+
+table tbody tr td:last-of-type {
+    border: none;
 }

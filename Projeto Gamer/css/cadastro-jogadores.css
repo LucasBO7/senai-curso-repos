@@ -36,190 +36,87 @@ body {
     color: white;
 }
 
+
+
 /* Mobile First */
+main{    
+    margin-top: 60px;
+    height: 1397px;
 
-/* #region FOOTER */
-/* #endregion */
-
-
-
-
-/* Main MOBILE*/
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    width: 100vw;
-    height: 1231px;
-
-    background-image: url(../assets/images/banner_cadastro_de_equipe.png);
+    background-image: url(../assets/images/Banner_cadastro_de_Jogadores.png);
     background-size: cover;
-    background-position: bottom;
     background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
 }
-
-main form {
-    position: relative;
-    z-index: 0;
-
+main .layout-grid{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    padding-top: 50px;
-    padding-bottom: 76px;
-    /* padding-left: 20px;
-    padding-right: 20px; */
-    width: 335px;
-    height: 462px;
-
-    /* border-style: linear-gradient(right, red, blue); */
+    justify-content: space-evenly;
 }
 
-main form::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 1px solid white;
-    border-radius: 8px;
-    backdrop-filter: blur(4px);
-    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38));
+/* Formulário */
+main form{
+    height: 650px;
 }
 
-/* Inputs */
-main form #inputs {
+form .title{
+    width: 250px;
+}
+form .title h1{
+    text-align: center;
+    width: 176px;
+}
+form #inputs{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
-    height: 168px;
+    
+    height: 296px;
 }
+form select{
+    font-family: 'titillium-Regular';
+    font-size: 16px;
+    
+    padding: 0 15px;
+    height: 40px;
+    width: 273px;
 
-/* Documents Input */
+    border: none;
+    border-radius: 8px;
 
+    background: linear-gradient(91.13deg, rgba(239, 239, 239, 0.6) 0%, rgba(239, 239, 239, 0.1) 100%);
+    /* border-image-slice: 1; */
+    backdrop-filter: blur(4px);
+}
+form select option{
+    background-color: rgb(97, 97, 97);
+}
 
 
 /* Tabela */
-table {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 151px;
-    width: 336px;
-    height: 410px;
-
-    color: white;
-
-    font-family: 'titillium-web-Black';
-    font-size: 20px;
-    text-transform: uppercase;
-
-}
-
-/* Table Header */
-table thead {
-    display: flex;
-    align-items: center;
-
-    height: 51px;
-    padding-left: 10px;
-    padding-right: 7px;
-
-    margin-bottom: 19px;
-    border-bottom: 3px solid #F9AA01;
-}
-
-table thead th {
-    color: #F9AA01;
-    text-shadow: 0 0 6px black;
-}
-
 table .table-id-element {
     width: 37px;
 }
 
 table .table-nome-element {
-    width: 145px;
+    width: 76px;
 }
 
-table .table-foto-element {
-    width: 75px;
+table .table-email-element {
+    width: 154px;
     height: 33px;
 }
 
 table .table-acoes-element {
-    width: 49px;
+    width: 37px;
     height: 33px;
 }
 
-
-/* Table Body */
-
-table tbody {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+table tbody{
+    font-size: 18px;
+    text-transform: none;
 }
-
-table tbody tr {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    position: relative;
-    z-index: 0;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 7px;
-    width: 100%;
-    height: 70px;
-
-    font-family: 'titillium-web-Bold';
-}
-
-table tbody tr::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    border-radius: 8px;
-    background-image: linear-gradient(90deg, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38));
-    backdrop-filter: blur(5px);
-
-}
-
-table tbody tr td {
-    height: 33px;
-    border-right: 3px solid #F9AA01;
-}
-
-table tbody tr td:last-of-type {
-    border: none;
-}
-
-.section-transition{
-    position: absolute;
-    margin-top: -79px;
-    width: 100%;
-    height: 79px;
-    background-image: linear-gradient(to top, rgba(4, 1, 9, 1.0), rgba(50, 3, 62, 0.04));
-}
-
-
-
 
 
 
