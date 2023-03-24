@@ -55,7 +55,7 @@ main {
     height: 1231px;
 
     background-image: url(../assets/images/banner_cadastro_de_equipe.png);
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
 }

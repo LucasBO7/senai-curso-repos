@@ -80,6 +80,7 @@
     text-align: center;
 }
 
+/* Inputs de Texto */
 input[type="text"]{
     font-family: 'titillium-Regular';
     font-size: 16px;
@@ -195,3 +196,38 @@ header .menu-usuarios {
     align-items: center;
 }
 /* #endregion */
+
+
+/* Formulário */
+main form {
+    position: relative;
+    z-index: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 50px;
+    padding-bottom: 76px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    width: 335px;
+    height: 462px;
+
+    /* border-style: linear-gradient(right, red, blue); */
+}
+
+main form::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid white;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    background-image: linear-gradient(to right bottom, rgba(27, 20, 38, 0.6), rgba(60, 3, 65, 0.38));
+}

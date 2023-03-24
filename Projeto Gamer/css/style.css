@@ -94,6 +94,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
+    text-decoration: none;
 }
 
 /* Classes Genéricas */
@@ -144,13 +146,13 @@ main .banner {
     padding-bottom: 40px;
     background-image: url(../assets/images/valorant-pergunte-3-scaled\ 1.png);
     background-size: cover;
-    background-position: bottom;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
 main .banner h1 {
     font-family: 'titillium-web-Black';
-    font-size: 80px;
+    font-size: 40px;
     text-shadow: 0 0 7px #FD4255;
     text-transform: initial;
 }
@@ -161,11 +163,12 @@ main .banner a {
     align-items: center;
     width: 170px;
     height: 40px;
-    font-family: TitilliumWeb-Bold;
+    font-family: 'Titillium-web-Bold';
     font-size: 24px;
     color: black;
     text-decoration: none;
     background-color: #F9AA01;
+    border: none;
     border-radius: 8px;
 }
 
@@ -322,6 +325,8 @@ main .jogos .jogos-flex {
 
 
 /* Footer */
+
+
 #color-transitor{
     z-index: 1;
     position: absolute;
@@ -454,5 +459,3 @@ main .jogos .jogos-flex {
     }
 
 }
-
-
