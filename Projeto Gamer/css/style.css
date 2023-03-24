@@ -193,24 +193,45 @@ main .jogos .jogos-flex {
 
     background-color: #F9AA01;
 }
+#services-banner .section-items-align{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    /* background-color: red; */
+    height: 1200px;
+}
+
+#services-banner .section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 #services-banner h2{
     letter-spacing: 2px;
-    padding-bottom: 46px;
-    border-bottom: 2px solid #1B1426;
+    text-align: center;
+    margin-bottom: 46px;
+    /* border-bottom: 2px solid #1B1426; */
+}
+#services-banner hr{
+    width: 204px;
+    border: 1px solid #1B1426;
 }
 
 /* Cards & Images */
 .cards {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
+    width: 100%;
     height: 1300px;
-    width: 336px;
 }
 #services-banner #card-image{
     position: relative;
+    background-color: blue;
     width: 314px;
     height: 511px;
     
@@ -221,7 +242,7 @@ main .jogos .jogos-flex {
 }
 #services-banner #card-image-2{
     position: relative;
-    align-self: center;
+    background-color: blue;
     width: 322px;
     height: 428px;
     
@@ -230,6 +251,7 @@ main .jogos .jogos-flex {
     background-repeat: no-repeat;
     background-position: bottom;
 }
+/* Cards-roxo */
 #services-banner .cards article {
     display: flex;
     flex-direction: column;
@@ -458,4 +480,14 @@ main .jogos .jogos-flex {
         height: 313px;
     }
 
+
+    /* Services Section */
+    #services-banner .section-title h2{
+        font-size: 40px !important;
+    }
+
+    #services-banner #card-image-2{
+        height: 511px;
+    }
+    
 }
