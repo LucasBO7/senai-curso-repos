@@ -55,8 +55,16 @@ header .header-bottom nav>a {
     font-size: 14px;
 }
 
+header .header-bottom nav > a:first-of-type{
+    color: #F9AA01;
+}
+
 header .header-bottom nav a:last-of-type {
     border-bottom: none;
+}
+
+header .header-bottom nav > a:hover{
+    color: #F9AA01;
 }
 
 header .header-bottom nav .midias-sociais {

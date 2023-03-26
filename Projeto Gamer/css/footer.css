@@ -22,7 +22,7 @@ footer .flex-footer{
     display: flex;
     flex-direction: row;
     align-items: top;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     
     padding-top: 74px;
@@ -109,12 +109,12 @@ footer #links-uteis-container ul li::before{
 
 
 /* Contatos */
-footer .contatos-container .contatos-infos-titulo{
+footer #contatos-container .contatos-infos-titulo{
     color: #F9AA01 !important;
 }
 
 /* Newsletter */
-footer .newsletter-container form {
+footer #newsletter-container form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -122,13 +122,13 @@ footer .newsletter-container form {
     width: 100%;
     height: 95px;
 }
-footer .newsletter-container form input, footer .newsletter-container form button{
+footer #newsletter-container form input, footer #newsletter-container form button{
     width: 100%;
 }
 
 
 /* Copyright */
-.copyright-container{
+#copyright-container{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -139,8 +139,62 @@ footer .newsletter-container form input, footer .newsletter-container form butto
     height: 101px !important;
 }
 
-.copyright-container a{
+#copyright-container a{
     position: absolute;
     top: 0;
     right: 0;
+}
+
+/* Desktop >= 768px */
+@media screen and (min-width: 768px) {
+    footer {
+        height: 520px;
+    }
+    
+    footer #infos-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        word-spacing: 1px;
+        
+        width: 294px;
+    }
+    footer #infos-container > img {
+        width: 196px;
+        height: 56px;
+    }
+    footer #infos-container p {
+        width: 274px;
+    }
+    footer #infos-container .midias-sociais-container {
+        width: 206px;
+    }
+
+    footer .titulo-linha hr {
+        margin-bottom: 47px;
+    }
+    footer #links-uteis-container #links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    footer #links-uteis-container {
+        width: 300px;
+        height: 258px;
+    }
+
+    footer #contatos-container {
+        width: 300px;
+    }
+
+    footer #newsletter-container {
+        width: 285px;
+    }
+
+    footer #copyright-container {
+        width: 1274px;
+        height: 62px !important;
+    }
+    
 }
