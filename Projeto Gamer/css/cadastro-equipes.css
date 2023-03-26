@@ -102,29 +102,15 @@ main form #inputs {
 
     height: 168px;
 }
+main form #inputs > * {
+    width: 100%;
+}
 
 /* Documents Input */
 
 
 
 /* Tabela */
-table {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-
-    margin-top: 151px;
-    width: 336px;
-    height: 410px;
-
-    color: white;
-
-    font-family: 'titillium-web-Black';
-    font-size: 20px;
-    text-transform: uppercase;
-
-}
-
 /* Table Header */
 table thead {
     display: flex;
@@ -229,89 +215,46 @@ table tbody tr td:last-of-type {
         max-width: 1200px;
     }
 
-    header {
-        position: static;
-        height: 140px;
+    main {
+        margin-top: 0;
+        height: 1372px;
+    }
+
+    /* Formulário */
+    main form {
+        width: 800px !important;
+        height: 530px !important;
+        padding: 0 116px;
+    }
+    main form h1 {
+        font-size: 40px !important;
+    }
+    main form hr {
+        width: 390px !important;
+    }
+    main form #inputs {
         width: 100%;
     }
 
-    header .header-top {
-        display: block;
-        height: 50px;
-        border-bottom: 2px solid #F9AA01;
+    /* Tabela */
+    table thead {
+        width: 800px;
+    }
+    
+    table .table-id-element {
+        width: 113px !important;
+    }
+    table .table-nome-element {
+        width: 352px !important;
+    }
+    table .table-foto-element {
+        width: 187px !important;
+    }
+    table .table-acoes-element {
+        width: 137px !important;
     }
 
-    header .header-top .contatos {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 450px;
-        font-family: Inter;
-        font-size: 14px;
-        font-weight: 400px;
-        /* border: 2px solid #FD4255; */
-    }
-
-    /* divs .phone, .mail */
-    header .header-top .contatos>a {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        width: 200px;
-        /* border-bottom: 2px solid #F9AA01; */
-    }
-
-    header .header-top .midias-sociais {
-        display: flex;
-        justify-content: space-between;
-        width: 140px;
-        /* border-bottom: 2px solid #F9AA01; */
-    }
-
-    /* esconde os elementos desnecessários */
-    header .header-bottom .menu-hamburger,
-    header .header-bottom .menu-pontinhos,
-    header .header-bottom nav .phone,
-    header .header-bottom nav .mail,
-    header .header-bottom nav .midias-sociais {
-        display: none;
-    }
-
-    header .header-bottom {
-        height: 90px;
-    }
-
-    header .logo {
-        width: 200px;
-    }
-
-    header .header-bottom nav {
-        position: static;
-        width: 440px;
-        height: 50px;
-        padding-bottom: 0;
-        flex-direction: row;
-        align-items: center;
-        /* background-color: red; */
-        justify-content: space-between;
-    }
-
-    header .header-bottom nav>a {
-        padding: 0;
-        border: none;
-    }
-
-    header .header-bottom .menu-usuarios {
-        position: static;
-        width: 140px;
-        flex-direction: row;
-        justify-content: space-between;
-        height: auto;
-        background-color: transparent;
-        background-image: none;
-    }
-
-    main {
-        margin-top: 0;
+    table tbody tr {
+        height: 125px !important;
     }
 }

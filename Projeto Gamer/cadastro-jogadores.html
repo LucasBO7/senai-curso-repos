@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style-elements.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cadastro-jogadores.css">
     <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/cadastro-jogadores.css">
     <title>Cadastro Jogadores - Gamer</title>
 </head>
 
@@ -57,7 +56,7 @@
                     <a href="index.html">Início</a>
                     <a href="cadastro-jogadores.html">Jogadores</a>
                     <a href="cadastro-equipes.html">Equipes</a>
-                    <a href="">Notícias</a>
+                    <a href="index.html">Notícias</a>
 
                     <!-- vísível apenas no mobile -->
                     <a class="phone">
@@ -88,7 +87,7 @@
                     alt="Ícone 3 pontinhos, abre e fecha o menu de usuários">
 
                 <div id="menu-usuarios" class="menu-usuarios">
-                    <a href="">
+                    <a href="login.html">
                         <img src="assets/icons/icone_conta_com_borda.svg" alt="Ícone de perfil">
                     </a>
                     <a href="">
@@ -112,15 +111,15 @@
                 </div>
 
                 <div id="inputs-container">
-                    <input type="text" placeholder="Digite o Id do jogador:">
+                    <input class="input-primary" type="text" placeholder="Digite o Id do jogador:">
                     <select name="" id="">
                         <option value="">Equipe 1</option>
                         <option value="">Equipe 2</option>
                         <option value="">Equipe 3</option>
                     </select>
-                    <input type="text" placeholder="Digite o nome do Jogador:">
-                    <input type="text" placeholder="Digite o Email do Jogador:">
-                    <input type="text" placeholder="Digite a Senha:">
+                    <input class="input-primary" type="text" placeholder="Digite o nome do Jogador:">
+                    <input class="input-primary" type="text" placeholder="Digite o Email do Jogador:">
+                    <input class="input-primary" type="text" placeholder="Digite a Senha:">
                 </div>
                 <button class="btn-yellow">Cadastrar</button>
             </form>
@@ -201,18 +200,18 @@
 
                 <div id="links" class="titillium-regular-small">
                     <ul>
-                        <li> <a href="">Início</a> </li>
-                        <li> <a href="">Jogadores</a> </li>
-                        <li> <a href="">Notícias</a> </li>
-                        <li> <a href="">Login</a> </li>
-                        <li> <a href="">Equipes</a> </li>
+                        <li> <a href="index.html">Início</a> </li>
+                        <li> <a href="cadastro-jogadores.html">Jogadores</a> </li>
+                        <li> <a href="cadastro-equipes.html">Equipes</a> </li>
+                        <li> <a href="index.html">Notícias</a> </li>
+                        <li> <a href="login.html">Login</a> </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="contatos-container">
+            <div id="contatos-container">
                 <div class="titulo-linha">
-                    <h1>Links Úteis</h1>
+                    <h1>Contatos</h1>
                     <hr>
                 </div>
 
@@ -228,19 +227,19 @@
                 </div>
             </div>
 
-            <div class="newsletter-container">
+            <div id="newsletter-container">
                 <div class="titulo-linha">
                     <h1>Newsletter</h1>
                     <hr>
                 </div>
 
                 <form>
-                    <input type="text" placeholder="Digite seu e-mail:">
+                    <input  class="input-primary" type="text" placeholder="Digite seu e-mail:">
                     <button class="btn-yellow">Enviar</button>
                 </form>
             </div>
 
-            <div class="copyright-container">
+            <div id="copyright-container">
                 <p class="titillium-regular-small">©Copyright2022-GamerJogosDigitais</p>
                 <a href="">
                     <img src="assets/icons/Botao_voltar_ao_topo.png" alt="">

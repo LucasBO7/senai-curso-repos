@@ -53,7 +53,7 @@
                     <a href="index.html">Início</a>
                     <a href="cadastro-jogadores.html">Jogadores</a>
                     <a href="cadastro-equipes.html">Equipes</a>
-                    <a href="">Notícias</a>
+                    <a href="index.html">Notícias</a>
 
                     <!-- vísível apenas no mobile -->
                     <a class="phone">
@@ -84,7 +84,7 @@
                     alt="Ícone 3 pontinhos, abre e fecha o menu de usuários">
 
                 <div id="menu-usuarios" class="menu-usuarios">
-                    <a href="">
+                    <a href="login.html">
                         <img src="assets/icons/icone_conta_com_borda.svg" alt="Ícone de perfil">
                     </a>
                     <a href="">
@@ -107,8 +107,8 @@
             </div>
 
             <div id="inputs">
-                <input type="text" id="equipe-id-input" placeholder="Digite o Id da sua equipe:">
-                <input type="text" id="equipe-nome-input" placeholder="Digite o nome da sua equipe:">
+                <input class="input-primary" type="text" id="equipe-id-input" placeholder="Digite o Id da sua equipe:">
+                <input class="input-primary" type="text" id="equipe-nome-input" placeholder="Digite o nome da sua equipe:">
                 <input type="file" title="Imagem da equipe">
             </div>
            
@@ -144,24 +144,21 @@
                     <td class="table-foto-element"> <img src="assets/images/LOUD_LOGO.png" alt=""> </td>
                     <td class="table-acoes-element"> <img src="assets/icons/icone_lixeira.svg" alt=""> </td>
                 </tr>
-                <tr>
-                    <td class="table-id-element">1</td>
-                    <td class="table-nome-element">Loud</td>
-                    <td class="table-foto-element"> <img src="assets/images/LOUD_LOGO.png" alt=""> </td>
-                    <td class="table-acoes-element"> <img src="assets/icons/icone_lixeira.svg" alt=""> </td>
-                </tr>
             </tbody>
         </table>
     </main>
     
+
     <footer>
         <div id="section-transition"></div>
         <div id="color-transitor"></div>
         <div class="layout-grid flex-footer">
             <div id="infos-container">
-                <img src="assets/images/logotipo-gamer.svg" alt="Imagem do logotipo do Site: Gamer com um controle no lugar da letra A">
+                <img src="assets/images/logotipo-gamer.svg"
+                    alt="Imagem do logotipo do Site: Gamer com um controle no lugar da letra A">
 
-                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e altamente comprometida.</p>
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e
+                    altamente comprometida.</p>
 
                 <div class="midias-sociais-container">
                     <a href="">
@@ -186,52 +183,52 @@
 
                 <div id="links" class="titillium-regular-small">
                     <ul>
-                        <li> <a href="">Início</a> </li>
-                        <li> <a href="">Jogadores</a> </li>
-                        <li> <a href="">Notícias</a> </li>
-                        <li> <a href="">Login</a> </li>
-                        <li> <a href="">Equipes</a> </li>
+                        <li> <a href="index.html">Início</a> </li>
+                        <li> <a href="cadastro-jogadores.html">Jogadores</a> </li>
+                        <li> <a href="cadastro-equipes.html">Equipes</a> </li>
+                        <li> <a href="index.html">Notícias</a> </li>
+                        <li> <a href="login.html">Login</a> </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="contatos-container">
+            <div id="contatos-container">
                 <div class="titulo-linha">
-                    <h1>Links Úteis</h1>
+                    <h1>Contatos</h1>
                     <hr>
                 </div>
 
                 <div class="titillium-bold-small">
                     <p class="contatos-infos-titulo">Localização</p>
                     <p class="contatos-info-conteudo">Rua Niterói, 180 - São Caetano do Sul - SP</p>
-                
+
                     <p class="contatos-infos-titulo">Junte-se a nós</p>
                     <p class="contatos-info">contato@gamer.com.br</p>
-                    
+
                     <p class="contatos-infos-titulo">Telefone:</p>
                     <p class="contatos-info">(11) 0900-1010</p>
                 </div>
             </div>
 
-            <div class="newsletter-container">
+            <div id="newsletter-container">
                 <div class="titulo-linha">
-                    <h1>Newsletter</h1>
+                    <h1 class="input-primary">Newsletter</h1>
                     <hr>
                 </div>
 
                 <form>
-                    <input type="text" placeholder="Digite seu e-mail:">
+                    <input class="input-primary" type="text" placeholder="Digite seu e-mail:">
                     <button class="btn-yellow">Enviar</button>
                 </form>
             </div>
 
-            <div class="copyright-container">
+            <div id="copyright-container">
                 <p class="titillium-regular-small">©Copyright2022-GamerJogosDigitais</p>
                 <a href="">
                     <img src="assets/icons/Botao_voltar_ao_topo.png" alt="">
                 </a>
             </div>
-            
+
 
         </div>
     </footer>

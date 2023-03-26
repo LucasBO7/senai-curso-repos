@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style-elements.css">
     <title>Document</title>
 </head>
@@ -15,7 +17,7 @@
     <header>
         <div class="header-top">
             <div class="layout-grid alinhamento-between-center">
-
+                <!-- Ícones de contatos -->
                 <div class="contatos">
                     <a class="phone">
                         <img src="assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
@@ -27,6 +29,7 @@
                     </a>
                 </div>
 
+                <!-- Ícones de mídias sociais -->
                 <div class="midias-sociais">
                     <a href="">
                         <img src="assets/icons/icone_facebook.svg" alt="Imagem link do facebook da empresa">
@@ -47,16 +50,18 @@
                 <img class="menu-hamburger" onclick="mostrarMenu()" src="assets/icons/menu_hamburguer.svg"
                     alt="Ícone de Telefone. Abre e fecha o menu principal, no celular">
 
+                <!-- Logotipo -->
                 <img class="logo" src="assets/images/logotipo-gamer.svg"
                     alt="Imagem logotipo gamer com um controle de vídeo game ao centro">
 
+                <!-- Principais links -->
                 <nav class="menu" id="menu">
                     <a href="index.html">Início</a>
-                    <a href="">Jogadores</a>
+                    <a href="cadastro-jogadores.html">Jogadores</a>
                     <a href="cadastro-equipes.html">Equipes</a>
-                    <a href="">Notícias</a>
+                    <a href="index.html">Notícias</a>
 
-                    <!-- vísível apenas no mobile -->
+                    <!-- (Contatos) vísível apenas no mobile -->
                     <a class="phone">
                         <img src="assets/icons/icone_telefone.svg" alt="Ícone do telefone de contato">
                         <p>(11) 0900-1010</p>
@@ -66,7 +71,7 @@
                         <p>contato@gamer.com.br</p>
                     </a>
 
-
+                    <!-- Midias sociais -->
                     <div class="midias-sociais inter-regular-small">
                         <a href="">
                             <img src="assets/icons/icone_facebook.svg" alt="Imagem link do facebook da empresa">
@@ -84,8 +89,9 @@
                 <img class="menu-pontinhos" onclick="mostrarUsuarios()" src="assets/icons/pointers.svg"
                     alt="Ícone 3 pontinhos, abre e fecha o menu de usuários">
 
+                <!-- Ícones de usuários -->
                 <div id="menu-usuarios" class="menu-usuarios">
-                    <a href="">
+                    <a href="login.html">
                         <img src="assets/icons/icone_conta_com_borda.svg" alt="Ícone de perfil">
                     </a>
                     <a href="">
@@ -106,31 +112,29 @@
             <div class="inputs-positioning titillium-regular-small">
                 <div class="icon-inputs">
                     <img src="assets/icons/icone_conta.svg" alt="">
-                    <div>
-                        <input type="text" id="email-input" placeholder="Digite seu e-mail:">
-                    </div>
+                    <input type="text" id="email-input" placeholder="Digite seu e-mail:">
                 </div>
 
                 <div class="icon-inputs">
                     <img src="assets/icons/icone_senha.svg" alt="">
-                    <div>
-                        <input type="text" id="email-input" placeholder="Digite sua senha:">
-                    </div>
+                    <input type="text" id="email-input" placeholder="Digite sua senha:">
                 </div>
             </div>
-            
+
             <button class="btn-yellow">Logar</button>
         </form>
     </main>
 
     <footer>
-        <div class="section-transition"></div>
+        <div id="section-transition"></div>
         <div id="color-transitor"></div>
         <div class="layout-grid flex-footer">
             <div id="infos-container">
-                <img src="assets/images/logotipo-gamer.svg" alt="Imagem do logotipo do Site: Gamer com um controle no lugar da letra A">
+                <img src="assets/images/logotipo-gamer.svg"
+                    alt="Imagem do logotipo do Site: Gamer com um controle no lugar da letra A">
 
-                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e altamente comprometida.</p>
+                <p>Nosso sucesso na criação de soluções de negócios se deve em grande parte à nossa equipe talentosa e
+                    altamente comprometida.</p>
 
                 <div class="midias-sociais-container">
                     <a href="">
@@ -155,56 +159,55 @@
 
                 <div id="links" class="titillium-regular-small">
                     <ul>
-                        <li> <a href="">Início</a> </li>
-                        <li> <a href="">Jogadores</a> </li>
-                        <li> <a href="">Notícias</a> </li>
-                        <li> <a href="">Login</a> </li>
-                        <li> <a href="">Equipes</a> </li>
+                        <li> <a href="index.html">Início</a> </li>
+                        <li> <a href="cadastro-jogadores.html">Jogadores</a> </li>
+                        <li> <a href="cadastro-equipes.html">Equipes</a> </li>
+                        <li> <a href="index.html">Notícias</a> </li>
+                        <li> <a href="login.html">Login</a> </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="contatos-container">
+            <div id="contatos-container">
                 <div class="titulo-linha">
-                    <h1>Links Úteis</h1>
+                    <h1>Contatos</h1>
                     <hr>
                 </div>
 
                 <div class="titillium-bold-small">
                     <p class="contatos-infos-titulo">Localização</p>
                     <p class="contatos-info-conteudo">Rua Niterói, 180 - São Caetano do Sul - SP</p>
-                
+
                     <p class="contatos-infos-titulo">Junte-se a nós</p>
                     <p class="contatos-info">contato@gamer.com.br</p>
-                    
+
                     <p class="contatos-infos-titulo">Telefone:</p>
                     <p class="contatos-info">(11) 0900-1010</p>
                 </div>
             </div>
 
-            <div class="newsletter-container">
+            <div id="newsletter-container">
                 <div class="titulo-linha">
                     <h1>Newsletter</h1>
                     <hr>
                 </div>
 
                 <form>
-                    <input type="text" placeholder="Digite seu e-mail:">
+                    <input  class="input-primary" type="text" placeholder="Digite seu e-mail:">
                     <button class="btn-yellow">Enviar</button>
                 </form>
             </div>
 
-            <div class="copyright-container">
+            <div id="copyright-container">
                 <p class="titillium-regular-small">©Copyright2022-GamerJogosDigitais</p>
                 <a href="">
                     <img src="assets/icons/Botao_voltar_ao_topo.png" alt="">
                 </a>
             </div>
-            
+
 
         </div>
     </footer>
-
     <script>
 
         function mostrarMenu() {

@@ -81,7 +81,7 @@
 }
 
 /* Inputs de Texto */
-input[type="text"], input[type="select"]{
+.input-primary {
     font-family: 'titillium-Regular';
     font-size: 16px;
     
@@ -97,7 +97,7 @@ input[type="text"], input[type="select"]{
     /* border-image-slice: 1; */
     backdrop-filter: blur(4px);
 }
-input[type="text"]::placeholder, input[type="select"]::placeholder{
+.input-primary::placeholder{
     color: white;
 }
 /* Input Select */
@@ -171,7 +171,6 @@ table {
     flex-direction: column;
 
     margin-top: 151px;
-    width: 336px;
     height: 410px;
 
     color: white;
