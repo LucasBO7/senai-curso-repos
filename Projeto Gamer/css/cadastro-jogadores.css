@@ -127,6 +127,8 @@ table tbody{
 
 @media screen and (min-width: 768px) {
     main {
+        height: 1372px;
+        
         margin-top: 0;
         background-image: url(../assets/images/banner_cadastro_de_jogador.png);
     }
@@ -173,6 +175,7 @@ table tbody{
     } */
     table tbody tr {
         width: 800px;
+        height: 125px !important;
         text-align: left !important;
     }
     table td {
