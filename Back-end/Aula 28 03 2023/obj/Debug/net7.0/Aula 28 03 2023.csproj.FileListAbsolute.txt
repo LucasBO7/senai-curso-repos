@@ -1,0 +1,15 @@
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\bin\Debug\net7.0\Aula 28 03 2023.exe
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\bin\Debug\net7.0\Aula 28 03 2023.deps.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\bin\Debug\net7.0\Aula 28 03 2023.runtimeconfig.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\bin\Debug\net7.0\Aula 28 03 2023.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\bin\Debug\net7.0\Aula 28 03 2023.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\obj\Debug\net7.0\Aula 28 03 2023.csproj.AssemblyReference.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\obj\Debug\net7.0\Aula 28 03 2023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\obj\Debug\net7.0\Aula 28 03 2023.AssemblyInfoInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\obj\Debug\net7.0\Aula 28 03 2023.AssemblyInfo.cs
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\obj\Debug\net7.0\Aula 28 03 2023.csproj.CoreCompileInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\obj\Debug\net7.0\Aula 28 03 2023.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\obj\Debug\net7.0\refint\Aula 28 03 2023.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\obj\Debug\net7.0\Aula 28 03 2023.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\obj\Debug\net7.0\Aula 28 03 2023.genruntimeconfig.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula 28 03 2023\obj\Debug\net7.0\ref\Aula 28 03 2023.dll
