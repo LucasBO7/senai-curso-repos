@@ -1,0 +1,15 @@
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\bin\Debug\net7.0\atividade-4.exe
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\bin\Debug\net7.0\atividade-4.deps.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\bin\Debug\net7.0\atividade-4.runtimeconfig.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\bin\Debug\net7.0\atividade-4.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\bin\Debug\net7.0\atividade-4.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\obj\Debug\net7.0\atividade-4.csproj.AssemblyReference.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\obj\Debug\net7.0\atividade-4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\obj\Debug\net7.0\atividade-4.AssemblyInfoInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\obj\Debug\net7.0\atividade-4.AssemblyInfo.cs
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\obj\Debug\net7.0\atividade-4.csproj.CoreCompileInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\obj\Debug\net7.0\atividade-4.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\obj\Debug\net7.0\refint\atividade-4.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\obj\Debug\net7.0\atividade-4.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\obj\Debug\net7.0\atividade-4.genruntimeconfig.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-30-03-2023\atividade-4\obj\Debug\net7.0\ref\atividade-4.dll
