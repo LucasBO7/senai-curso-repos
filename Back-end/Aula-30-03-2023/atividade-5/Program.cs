@@ -12,10 +12,10 @@ float valorTotal;
 if (quantiaComprada < 12)
 {
     valorTotal = precoMacaMenosQueDuzia * quantiaComprada;
-    Console.WriteLine($"Valor total da compra: {valorTotal}");
+    Console.WriteLine($"Valor total da compra: R$ {valorTotal.ToString("N2")}");
 }
 else
 {
     valorTotal = precoMaiorQueDuzia * quantiaComprada;
-    Console.WriteLine($"Valor total da compra: {valorTotal}");
+    Console.WriteLine($"Valor total da compra: R$ {valorTotal.ToString("N2")}");
 }

@@ -13,3 +13,4 @@ int senha = int.Parse(Console.ReadLine());
 // }
 
 string acessoRetornoMsg = (senha == senhaValida) ? "ACESSO PERMITIDO" : "ACESSO NEGADO";
+Console.WriteLine(acessoRetornoMsg);

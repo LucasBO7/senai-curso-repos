@@ -25,5 +25,5 @@ else if (golsTimeA == golsTimeB)
 }
 else
 {
-    Console.WriteLine($"O time {nomeTimeB}");
+    Console.WriteLine($"O time {nomeTimeB} venceu");
 }
