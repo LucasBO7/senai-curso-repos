@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-31-03-2023\\exercicios-extras\\exercicio-4\\exercicio-4.csproj",
+      "projectUniqueName": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-30-03-2023\\Aula-31-03-2023\\exercicios-extras\\exercicio-4\\exercicio-4.csproj",
       "projectName": "exercicio-4",
-      "projectPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-31-03-2023\\exercicios-extras\\exercicio-4\\exercicio-4.csproj",
+      "projectPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-30-03-2023\\Aula-31-03-2023\\exercicios-extras\\exercicio-4\\exercicio-4.csproj",
       "packagesPath": "C:\\Users\\41365718875\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-31-03-2023\\exercicios-extras\\exercicio-4\\obj\\",
+      "outputPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-30-03-2023\\Aula-31-03-2023\\exercicios-extras\\exercicio-4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\41365718875\\AppData\\Roaming\\NuGet\\NuGet.Config",

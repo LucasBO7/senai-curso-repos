@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-31-03-2023\\exercicios-extras\\exercicio-3\\exercicio-3.csproj": {}
+    "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-30-03-2023\\Aula-31-03-2023\\exercicios-extras\\exercicio-3\\exercicio-3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-31-03-2023\\exercicios-extras\\exercicio-3\\exercicio-3.csproj": {
+    "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-30-03-2023\\Aula-31-03-2023\\exercicios-extras\\exercicio-3\\exercicio-3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-31-03-2023\\exercicios-extras\\exercicio-3\\exercicio-3.csproj",
+        "projectUniqueName": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-30-03-2023\\Aula-31-03-2023\\exercicios-extras\\exercicio-3\\exercicio-3.csproj",
         "projectName": "exercicio-3",
-        "projectPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-31-03-2023\\exercicios-extras\\exercicio-3\\exercicio-3.csproj",
+        "projectPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-30-03-2023\\Aula-31-03-2023\\exercicios-extras\\exercicio-3\\exercicio-3.csproj",
         "packagesPath": "C:\\Users\\41365718875\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-31-03-2023\\exercicios-extras\\exercicio-3\\obj\\",
+        "outputPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-30-03-2023\\Aula-31-03-2023\\exercicios-extras\\exercicio-3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\41365718875\\AppData\\Roaming\\NuGet\\NuGet.Config",

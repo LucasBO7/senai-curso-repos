@@ -153,22 +153,22 @@ Console.Write("Já trabalhou com a vítima?(sim/não): ");
 perguntas.Add(Console.ReadLine().ToLower());
 
 
-int respostasPositivas = perguntas.FindAll(resposta => resposta == "sim").Count();
+int qntdRespostasPositivas = perguntas.FindAll(resposta => resposta == "sim").Count();
 
 
-if (respostasPositivas == 2)
+if (qntdRespostasPositivas == 2)
 {
-    Console.WriteLine($"status: SUSPEITA, com participação de {perguntas.Count} perguntas positivas.");
+    Console.WriteLine($"status: SUSPEITA, com participação de {qntdRespostasPositivas} perguntas positivas.");
 }
-else if (respostasPositivas >= 3 && respostasPositivas <= 4)
+else if (qntdRespostasPositivas >= 3 && qntdRespostasPositivas <= 4)
 {
-    Console.WriteLine($"status: CÚMPLICE, com participação de {perguntas.Count} perguntas positivas.");
+    Console.WriteLine($"status: CÚMPLICE, com participação de {qntdRespostasPositivas} perguntas positivas.");
 }
-else if (respostasPositivas == 5)
+else if (qntdRespostasPositivas == 5)
 {
-    Console.WriteLine($"status: CULPADA, com participação de {perguntas.Count} perguntas positivas.");
+    Console.WriteLine($"status: CULPADA, com participação de {qntdRespostasPositivas} perguntas positivas.");
 }
 else
 {
-    Console.WriteLine($"status: INOCENTE, com participação de {perguntas.Count} perguntas positivas.");
+    Console.WriteLine($"status: INOCENTE, com participação de {qntdRespostasPositivas} perguntas positivas.");
 }

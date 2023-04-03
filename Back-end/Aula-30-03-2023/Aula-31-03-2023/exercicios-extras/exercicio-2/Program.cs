@@ -16,7 +16,3 @@ Array.Sort(numbers); // Ordena em ordem crescente os números
 float minNumber = numbers.First();
 float maxNumber = numbers.Last();
 Console.WriteLine($"Menor número: {minNumber}, Maior número: {maxNumber}");
-
-// pausa o programa
-Console.WriteLine("\nPressione qualquer tecla para sair...");
-Console.ReadKey();
