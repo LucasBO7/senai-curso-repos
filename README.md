@@ -1,4 +1,4 @@
-# senai-coure-repos
+# senai-course-repos
 Repositório para Atividades e projetos criados durante o Curso Técnico de Desenvolvimento de Sistemas no SENAI Paulo Skaf.
 Divdidos em Front-end, Back-end.
 
