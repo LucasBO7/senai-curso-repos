@@ -4,6 +4,10 @@ int idade;
 float salario;
 char estadoCivil;
 
+// filtros para idade máxima e mínima 
+int idademaxima = 100;
+int idademinima = 1;
+
 Console.WriteLine($"Insira as informações abaixo:");
 do
 {
@@ -20,4 +24,4 @@ do
     estadoCivil = char.Parse(Console.ReadLine().ToLower());
     Console.WriteLine();
 }
-while (nome == "" || idade <= 0 || idade > 100 || salario <= 0 || estadoCivil != 's' && estadoCivil != 'c' && estadoCivil != 'v' && estadoCivil != 'd');
+while (nome == "" || idade < idademinima || idade > idademaxima || salario <= 0 || estadoCivil != 's' && estadoCivil != 'c' && estadoCivil != 'v' && estadoCivil != 'd');
