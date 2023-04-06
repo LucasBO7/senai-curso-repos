@@ -1,0 +1,15 @@
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\bin\Debug\net7.0\desafio-exercicio.exe
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\bin\Debug\net7.0\desafio-exercicio.deps.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\bin\Debug\net7.0\desafio-exercicio.runtimeconfig.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\bin\Debug\net7.0\desafio-exercicio.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\bin\Debug\net7.0\desafio-exercicio.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\obj\Debug\net7.0\desafio-exercicio.csproj.AssemblyReference.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\obj\Debug\net7.0\desafio-exercicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\obj\Debug\net7.0\desafio-exercicio.AssemblyInfoInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\obj\Debug\net7.0\desafio-exercicio.AssemblyInfo.cs
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\obj\Debug\net7.0\desafio-exercicio.csproj.CoreCompileInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\obj\Debug\net7.0\desafio-exercicio.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\obj\Debug\net7.0\refint\desafio-exercicio.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\obj\Debug\net7.0\desafio-exercicio.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\obj\Debug\net7.0\desafio-exercicio.genruntimeconfig.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-06-04-2023\desafio-exercicio\obj\Debug\net7.0\ref\desafio-exercicio.dll
