@@ -7,9 +7,14 @@ salvar o anterior e salvar com o atual
 */
 
 int numero = 0;
+int numB = 0;
+int numC = 1;
 
-for (int x = 0; x <= 500; x++)
+do
 {
-    Console.WriteLine(resultado);
+    numero = numB + numC; // x = 0 + 1
+    numB = numC; // numB = 1
+    numC = numero; // numc = 1
     
-}
+    Console.WriteLine(numero);
+} while (numero <= 500);
