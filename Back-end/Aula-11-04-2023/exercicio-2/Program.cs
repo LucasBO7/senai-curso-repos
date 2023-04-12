@@ -4,16 +4,16 @@
 // Resposta do nome em azul;    Resposta da idade em verde;
 // nome: Jose /n idade: 40 anos 
 
-int quantidade_pessoas = 5 ;
-string[] name = new string[quantidade_pessoas];
+int quantidade_pessoas = 5;
+string[] nomes = new string[quantidade_pessoas];
 int[] idade = new int[quantidade_pessoas];
 
 for (int i = 0; i < quantidade_pessoas; i++)
 {
-    Console.Write($"Insira seu nome: ");
-    name[i] = Console.ReadLine();
+    Console.Write($"Insira o {i + 1}º nome: ");
+    nomes[i] = Console.ReadLine();
 
-    Console.Write($"Insira sua idade: ");
+    Console.Write($"Insira a {i + 1}º idade: ");
     idade[i] = int.Parse(Console.ReadLine());
 
     Console.WriteLine();
@@ -25,7 +25,7 @@ for (int x = 0; x < quantidade_pessoas; x++)
 {
     Console.Write($"{x + 1}) nome: ");
     Console.ForegroundColor = ConsoleColor.Blue; // Aplica cor azul à resposta
-    Console.WriteLine($"{name[x]}");
+    Console.WriteLine($"{nomes[x]}");
     Console.ResetColor();
 
 
@@ -35,5 +35,5 @@ for (int x = 0; x < quantidade_pessoas; x++)
     Console.ResetColor();
 
     Console.WriteLine(); // Pula linha
-    
+
 }

@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Roboto-Black";
+    src: url(../assets/fonts/Roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Roboto-Black";
+}
+
+.input-1 {
+    padding: 0 15px;
+    width: 463px;
+    height: 48px;
+
+    border: none;
+    border-radius: 3px;
+}
+
+.link a {
+    font-family: "Roboto-Regular";
+    font-size: 14px;
+    color: white;
+}

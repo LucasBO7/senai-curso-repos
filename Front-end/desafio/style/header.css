@@ -1,7 +1,46 @@
-header {
+header,
+#main-section {
+    width: 100%;
+    background-image: linear-gradient(to right, #AD60D0, #3E2AB1);
+}
+
+/* Dentro do Layout-Grid */
+header .header-container {
     display: flex;
     align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
 
     width: 100%;
     height: 102px;
+}
+
+header .main-links {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 343px;
+}
+
+header .action-icons-container{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 167px;
+}
+
+header .action-icons-container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color ease 0.4s;
+}
+header .action-icons-container a:hover{
+    background-color: #FF0099;
 }

@@ -1,0 +1,27 @@
+/* Reset de propriedades */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Cria borda padrão por todo o site */
+.layout-grid {
+    width: 80%;
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+section {
+    height: 660px;
+}
+section img {
+    height: 600px;
+    width: 900px;
+}
+
+
+/* #main-section {} */
