@@ -1,0 +1,15 @@
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\obj\Debug\net7.0\exercicio-fixacao.csproj.AssemblyReference.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\obj\Debug\net7.0\exercicio-fixacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\obj\Debug\net7.0\exercicio-fixacao.AssemblyInfoInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\obj\Debug\net7.0\exercicio-fixacao.AssemblyInfo.cs
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\obj\Debug\net7.0\exercicio-fixacao.csproj.CoreCompileInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\bin\Debug\net7.0\exercicio-fixacao.exe
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\bin\Debug\net7.0\exercicio-fixacao.deps.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\bin\Debug\net7.0\exercicio-fixacao.runtimeconfig.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\bin\Debug\net7.0\exercicio-fixacao.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\bin\Debug\net7.0\exercicio-fixacao.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\obj\Debug\net7.0\exercicio-fixacao.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\obj\Debug\net7.0\refint\exercicio-fixacao.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\obj\Debug\net7.0\exercicio-fixacao.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\obj\Debug\net7.0\exercicio-fixacao.genruntimeconfig.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-fixacao\obj\Debug\net7.0\ref\exercicio-fixacao.dll
