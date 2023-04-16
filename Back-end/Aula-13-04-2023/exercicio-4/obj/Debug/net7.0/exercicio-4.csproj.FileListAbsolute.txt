@@ -1,0 +1,15 @@
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\bin\Debug\net7.0\exercicio-4.exe
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\bin\Debug\net7.0\exercicio-4.deps.json
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\bin\Debug\net7.0\exercicio-4.runtimeconfig.json
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\bin\Debug\net7.0\exercicio-4.dll
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\bin\Debug\net7.0\exercicio-4.pdb
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\obj\Debug\net7.0\exercicio-4.csproj.AssemblyReference.cache
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\obj\Debug\net7.0\exercicio-4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\obj\Debug\net7.0\exercicio-4.AssemblyInfoInputs.cache
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\obj\Debug\net7.0\exercicio-4.AssemblyInfo.cs
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\obj\Debug\net7.0\exercicio-4.csproj.CoreCompileInputs.cache
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\obj\Debug\net7.0\exercicio-4.dll
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\obj\Debug\net7.0\refint\exercicio-4.dll
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\obj\Debug\net7.0\exercicio-4.pdb
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\obj\Debug\net7.0\exercicio-4.genruntimeconfig.cache
+C:\Users\Batata Voadora\Documents\SENAI\senai-curso-repos\Back-end\Aula-13-04-2023\exercicio-4\obj\Debug\net7.0\ref\exercicio-4.dll
