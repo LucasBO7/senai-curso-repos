@@ -1,27 +1,57 @@
-/* Reset de propriedades */
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-    outline: none;
-}
+#main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-/* Cria borda padrão por todo o site */
-.layout-grid {
-    width: 80%;
-    height: 100%;
-
-    margin: 0 auto;
-}
-
-section {
     height: 660px;
 }
-section img {
+
+section #notebook-img {
+    left: 100px;
+
     height: 600px;
     width: 900px;
 }
 
+section>* {
+    background-color: aqua;
+}
 
-/* #main-section {} */
+section figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    margin: 30px;
+    padding: 10px;
+
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 50%;
+}
+
+#main-section>div {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 100%;
+
+    background-color: greenyellow;
+}
+
+#main-section > .layout-grid > #content-container {
+    position: absolute;
+    top: 20%;
+    right: 350px;
+    
+    /* background-color: red; */
+    color: white;
+    font-family: 'Roboto-Regular';
+    font-size: 10px;
+    text-transform: uppercase;
+}

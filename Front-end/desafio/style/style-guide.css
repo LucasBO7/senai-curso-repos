@@ -7,6 +7,24 @@
     src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
 }
 
+/* Reset de propriedades */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Cria borda padrão por todo o site */
+.layout-grid {
+    width: 80%;
+    height: 100%;
+
+    margin: 0 auto;
+}
+
+
 .logo {
     color: white;
     text-transform: uppercase;

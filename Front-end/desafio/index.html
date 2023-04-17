@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/header.css"> <!-- Header -->
-    <link rel="stylesheet" href="style/index.css"> <!-- Todo o site -->
     <link rel="stylesheet" href="style/style-guide.css"> <!-- Guia de estilo -->
+    <link rel="stylesheet" href="style/index.css"> <!-- Todo o site -->
     <title>Desafio</title>
 </head>
 
@@ -49,18 +49,26 @@
 
     <!-- Main Section -->
     <section id="main-section">
-        <button>
-            <img src="" alt="">
-        </button>
-        
-        <img src="assets/images/banner-notebook-tec-manha2.png"
-            alt="Imagem de um notebook, servindo de imagem de fundo da àrea inicial da página.">
+        <figure>
+            <img class="arrow-icon" src="assets/icons/arrow-left.svg"
+                alt="Ícone de seta para esquerda, para mudar o banner">
+        </figure>
 
-        <div>
-            <h2>Minim Veniam</h2>
-            <h1>Ut labore et dolore</h1>
-            <button>Buy now</button>
+        <div class="layout-grid">
+            <img id="notebook-img" src="assets/images/banner-notebook-tec-manha2.png"
+                alt="Imagem de um notebook, servindo de imagem de fundo da àrea inicial da página.">
+
+            <div id="content-container">
+                <h2>Minim Veniam</h2>
+                <h1>Ut labore et dolore</h1>
+                <button>Buy now</button>
+            </div>
         </div>
+
+        <figure>
+            <img class="arrow-icon" src="assets/icons/arrow-right.svg"
+                alt="Ícone de seta para esquerda, para mudar o banner">
+        </figure>
     </section>
 
 </body>
