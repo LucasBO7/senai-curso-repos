@@ -24,10 +24,10 @@ void ShowMenu(string[] names, float[] prices, bool[] promotions)
 
 ");
 
-    while (selectedOptionMenu != '1' || selectedOptionMenu != '2' || selectedOptionMenu != '0')
+    do
     {
         selectedOptionMenu = char.Parse(Console.ReadLine());
-    }
+    } while (selectedOptionMenu != '1');
 
 
     switch (selectedOptionMenu)
