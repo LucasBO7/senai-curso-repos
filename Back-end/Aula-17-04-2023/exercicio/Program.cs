@@ -49,30 +49,38 @@ static void RegisterTicket(string[] passengerName, string[] origin, string[] des
     int actualPosition = 0; // Busca o índex dos arrays
     do
     {
+        int countElementsWithValue = passengerName.Where(element => (!String.IsNullOrEmpty(element))).Count(); // Pega a quantidade de elementos que possuem um valor --> 
+        int lastElementWithoutValue = countElementsWithValue;
+
+
         Console.Write($"Nome do passageiro: ");
-        passengerName[actualPosition] = Console.ReadLine();
+        passengerName[lastElementWithoutValue] = Console.ReadLine();
 
         Console.Write($"Origem: ");
-        origin[actualPosition] = Console.ReadLine();
+        origin[lastElementWithoutValue] = Console.ReadLine();
 
         Console.Write($"Destino: ");
-        destiny[actualPosition] = Console.ReadLine();
+        destiny[lastElementWithoutValue] = Console.ReadLine();
 
         Console.Write($"Data do vôo: ");
-        string[] flightDateInString = Console.ReadLine().Split('/');
+        var flightDateInString = Console.ReadLine().Split('/');
 
-        flightDate[actualPosition].AddDays(int.Parse(flightDateInString[0])); // Dias
-        flightDate[actualPosition].AddMonths(int.Parse(flightDateInString[1])); // Mêses
-        flightDate[actualPosition].AddYears(int.Parse(flightDateInString[2])); // Anos
+        // Divide cada valor da data em variáveis locais
+        int day = Convert.ToInt16(flightDateInString[0]);
+        int month = Convert.ToInt16(flightDateInString[1]);
+        int year = Convert.ToInt16(flightDateInString[2]);
+        DateOnly date = new DateOnly(year, month, day); // Cria um objeto DateOnly para receber as datas
+        flightDate[lastElementWithoutValue] = date; // Passa o objeto para o flightDate
+
         Console.WriteLine(); // Pula linha
-        
+
 
         Console.Write($"Deseja cadastrar uma nova passagem?(s/n): ");
         registerMoreTickets = char.Parse(Console.ReadLine().ToLower());
 
         Console.WriteLine(); // Pula linha
         Console.WriteLine(); // Pula linha
-        
+
 
         actualPosition++;
     } while (registerMoreTickets == 's' && actualPosition < 5);
@@ -81,23 +89,41 @@ static void RegisterTicket(string[] passengerName, string[] origin, string[] des
 }
 static void ListTickets(string[] passengerName, string[] origin, string[] destiny, DateOnly[] flightDate)
 {
-    if (passengerName.Any())
+    int countElementsWithValue = passengerName.Where(element => (!String.IsNullOrEmpty(element))).Count(); // Pega a quantidade de elementos que possuem um valor    
+
+    if (countElementsWithValue > 0)
     {
-        for (int x = 0; x < passengerName.Count(); x++)
+        Console.WriteLine(@$"
+         ________________________________
+        |                                |            
+        |        Lista de usuários       |
+        |________________________________|
+        
+        ");
+
+
+        for (int x = 0; x < countElementsWithValue; x++)
         {
             Console.WriteLine(@$"
-            Nome do passageiro: {passengerName[x]}
-            Origem: {origin[x]}
-            Destino: {destiny[x]}
-            Data de vôo: {flightDate[x]}
+Nome do passageiro: {passengerName[x]}
+Origem: {origin[x]}
+Destino: {destiny[x]}
+Data de vôo: {flightDate[x].Day}/{flightDate[x].Month}/{flightDate[x].Year}
             ");
         }
+        Console.ReadLine();
     }
     else
     {
         Console.WriteLine($"A lista esta vazia, deseja cadastrar alguma passagem? (s/n): ");
         char registerAnyTicket = char.Parse(Console.ReadLine());
+
+        if (registerAnyTicket == 's')
+        {
+            RegisterTicket(passengerName, origin, destiny, flightDate);
+        }
     }
+    Menu(passengerName, origin, destiny, flightDate);
 }
 static void Menu(string[] passengerName, string[] origin, string[] destiny, DateOnly[] flightDate)
 {
@@ -115,7 +141,7 @@ Utilize os respectivos números para cada função
 2 - Listar passagens
 0 - Sair
 ");
-Console.ResetColor();
+    Console.ResetColor();
     char menu = char.Parse(Console.ReadLine());
     switch (menu)
     {
@@ -128,7 +154,9 @@ Console.ResetColor();
             break;
 
         case '0':
-            Console.WriteLine($"Acabou essa merda! Sai daqui!!");
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"Sistema finalizado!");
+            Console.ResetColor();
             Environment.Exit(5);
             break;
     }
