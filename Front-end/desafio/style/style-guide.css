@@ -6,6 +6,10 @@
     font-family: "Roboto-Regular";
     src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
 }
+@font-face {
+    font-family: "Poppins-Bold";
+    src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
 
 /* Reset de propriedades */
 * {

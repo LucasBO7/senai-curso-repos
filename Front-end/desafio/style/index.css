@@ -13,10 +13,6 @@ section #notebook-img {
     width: 900px;
 }
 
-section>* {
-    background-color: aqua;
-}
-
 section figure {
     display: flex;
     justify-content: center;
@@ -40,18 +36,43 @@ section figure {
     justify-content: space-between;
 
     height: 100%;
-
-    background-color: greenyellow;
 }
 
-#main-section > .layout-grid > #content-container {
+/* Textos e botão da section Home */
+#main-section>.layout-grid>#content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    
     position: absolute;
     top: 20%;
-    right: 350px;
-    
-    /* background-color: red; */
+    right: 30px;
+    height: 300px;
+
     color: white;
     font-family: 'Roboto-Regular';
     font-size: 10px;
+}
+
+#main-section>.layout-grid>#content-container h2 {
     text-transform: uppercase;
 }
+#main-section>.layout-grid>#content-container h1 {
+    font-size: 74px;
+    width: 430px;
+}
+#main-section>.layout-grid>#content-container button {
+    width: 172px;
+    height: 50px;
+
+    border: none;
+    border-radius: 87px;
+
+    color: white;
+    background-color: #FFC300;
+
+    cursor: pointer;
+}
+
+

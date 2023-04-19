@@ -11,6 +11,7 @@
 // Ao cadastrar uma passagem ao final o sistema deverá perguntar se gostaria de cadastrar uma nova passagem caso contrário voltar ao menu anterior(S/N).
 
 // Métodos
+// int count = 0;
 static void LoginUser(bool accessStats, string passwordRegistered)
 {
     do
@@ -83,12 +84,19 @@ static void RegisterTicket(string[] passengerName, string[] origin, string[] des
 
 
         actualPosition++;
+        // count++;
     } while (registerMoreTickets == 's' && actualPosition < 5);
 
     Menu(passengerName, origin, destiny, flightDate);
 }
 static void ListTickets(string[] passengerName, string[] origin, string[] destiny, DateOnly[] flightDate)
 {
+    /*
+    countElementsWithValue = count;
+
+        Professor, encontrei duas formas de fazer esta lógica, a primeira que é o código que está acima + a variavel count
+        e seu incremento dentro da classe "RegisterTicket" e a segunda que, é por meio do código abaixo: 
+    */
     int countElementsWithValue = passengerName.Where(element => (!String.IsNullOrEmpty(element))).Count(); // Pega a quantidade de elementos que possuem um valor    
 
     if (countElementsWithValue > 0)
