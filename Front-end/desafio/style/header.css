@@ -15,17 +15,23 @@ header .header-container {
     height: 102px;
 }
 
+/* Links principais / importantes */
 header .main-links {
     display: flex;
     justify-content: space-between;
-    
+
     width: 343px;
+    transition: color ease-in-out 0.5s;
+}
+header .main-links a:hover {
+    color: #FF0099;
 }
 
-header .action-icons-container{
+/* Links de ação (coração, carro de comprar, hamburguer menu barras) */
+header .action-icons-container {
     display: flex;
     justify-content: space-between;
-    
+
     width: 167px;
 }
 
@@ -33,7 +39,7 @@ header .action-icons-container a {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     border: 2px solid white;
     width: 50px;
     height: 50px;
@@ -41,6 +47,7 @@ header .action-icons-container a {
     border-radius: 50%;
     transition: background-color ease 0.4s;
 }
-header .action-icons-container a:hover{
+
+header .action-icons-container a:hover {
     background-color: #FF0099;
 }
