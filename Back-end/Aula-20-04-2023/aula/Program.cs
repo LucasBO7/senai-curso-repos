@@ -1,9 +1,17 @@
-﻿using aula;
+using aula;
 
 // Instanciar um objeto da classe Personagem
 List<Personagem> personagens = new List<Personagem>();
 
 string? continueAdding = "não";
+
+Console.WriteLine(@$"
+________________________________
++   CADASTRO DE PERSONAGENS    +
+________________________________
+
+");
+
 do
 {
     Console.Write($"Informe o nome do personagem: ");
@@ -42,6 +50,5 @@ Idade: {personagem.Idade}
 Armadura: {personagem.Armadura}
 IA: {personagem.Ia}
 ");
-
 }
 

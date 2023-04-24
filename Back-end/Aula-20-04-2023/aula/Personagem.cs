@@ -12,6 +12,17 @@ namespace aula
         public string Armadura { get; set; }
         public string Ia { get; set; }
 
+        public void Add(string nome, int idade, string armadura, string ia, List<Personagem> personagens)
+        {
+            personagens.Add(new Personagem
+            {
+                Nome = nome,
+                Idade = idade,
+                Armadura = armadura,
+                Ia = ia
+            });
+        }
+
         public void Atacar()
         {
             Console.WriteLine($"O persongem atacou !!!");
@@ -24,6 +35,6 @@ namespace aula
         {
             Console.WriteLine($"Armadura restaurada !!!");
         }
-        
+
     }
 }
