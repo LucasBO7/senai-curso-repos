@@ -32,27 +32,23 @@ namespace exercicio
             Console.Clear();
         }
 
-        public void CalculateDiscount(bool isStudentScholarship, float finalAverage, float monthlyFee, float discount)
+        public float CalculateDiscount(bool isStudentScholarship, float finalAverage, float monthlyFee)
         {
             // Se aluno for bolsista e média maior que 6
-            if (isStudentScholarship && finalAverage > 6)
+            if (isStudentScholarship == true && finalAverage > 6)
             {
                 if (finalAverage >= 8)
                 {
-                    discount = 0.5f; // 0.5 = 50% em decimal
+                    this.Discount = 0.5f; // 0.5 = 50% em decimal
                 }
                 else
                 {
-                    discount = 0.3f;
+                    this.Discount = 0.3f;
                 }
-                monthlyFee = monthlyFee * discount;
+                float discountValue = monthlyFee * this.Discount; // Pega o valor correspondente à porcentagem
+                monthlyFee = monthlyFee - discountValue; // Subtrai para retornar o valor final com o desconto
             }
-            else
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"O aluno não possui acesso ao desconto.");
-                Console.ResetColor();
-            }
+            return monthlyFee;
         }
     }
 }

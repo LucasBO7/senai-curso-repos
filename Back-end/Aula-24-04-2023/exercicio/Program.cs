@@ -28,7 +28,8 @@ Console.Write($"RG(Registro Geral): ");
 int rg = int.Parse(Console.ReadLine());
 
 Console.Write($"É bolsista? (s/n): ");
-bool isScholarship = Console.ReadLine() == "s" ? true : false;
+bool isScholarship = Console.ReadLine() == "s";
+//Console.ReadLine() == "s";    É o mesmo que:   Console.ReadLine() == "s" ? true : false;
 
 Console.Write($"Média final: ");
 float finalAverage = float.Parse(Console.ReadLine()); // Média final
@@ -51,7 +52,21 @@ Student student = new Student()
 };
 
 // Calcula o desconto
-student.CalculateDiscount(isScholarship, finalAverage, monthlyFee, discount);
+student.MonthlyFee = student.CalculateDiscount(isScholarship, finalAverage, monthlyFee);
+
+if (student.MonthlyFee == monthlyFee)
+{
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine($"O aluno não possui direito ao desconto de bolsista.");
+    Console.ResetColor();
+}
+else
+{
+    Console.ForegroundColor = ConsoleColor.Green;
+    Console.WriteLine($"O aluno possui direito ao desconto de {student.Discount * 100}% da mensalidade.");
+    Console.ResetColor();
+}
+
 Menu(student);
 
 static void Menu(Student student)
@@ -81,10 +96,10 @@ static void Menu(Student student)
             Menu(student);
             break;
 
-        case 3:
-            break;
-
         case 0:
+            Console.BackgroundColor = ConsoleColor.Red;
+            Console.WriteLine($"Saindo do programa...");
+            Console.ResetColor();
             Environment.Exit(1);
             break;
 
