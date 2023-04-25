@@ -75,6 +75,11 @@ section figure {
     background-color: #FFC300;
 
     cursor: pointer;
+    transition: ease background-color 0.5s;
+}
+
+#main-section>.layout-grid>#content-container button:hover {
+    background-color: #ff5e00;
 }
 
 #infos-section {
@@ -91,9 +96,29 @@ section figure {
 }
 
 #infos-section>div article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
     font-family: 'Roboto-Black';
     /* width: 274px; */
+    padding-top: 25px;
     width: 23%;
     height: 154px;
     background-color: green;
+}
+
+#infos-section>div article img {
+    height: 34px;
+    margin: 0 10px;
+}
+
+#infos-section>div article h4 {
+    font-family: 'Poppins-Bold';
+    font-size: 24px;
+}
+#infos-section>div article p {
+    font-family: 'Roboto-Medium';
+    font-size: 15px;
+    color: #A5A5A5;
 }
