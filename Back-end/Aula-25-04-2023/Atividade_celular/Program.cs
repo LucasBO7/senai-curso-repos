@@ -91,7 +91,10 @@ static void Menu(Celular celular)
                     break;
 
                 case '0':
-                    abrirMenu = true;
+                    abrirMenu = false;
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"Saindo do programa...");
+                    Console.ResetColor();
                     Environment.Exit(1);
                     break;
 
@@ -126,6 +129,9 @@ static void Menu(Celular celular)
 
                 case '0':
                     abrirMenu = false;
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"Saindo do programa...");
+                    Console.ResetColor();
                     Environment.Exit(1); // Fecha o programa
                     break;
 
