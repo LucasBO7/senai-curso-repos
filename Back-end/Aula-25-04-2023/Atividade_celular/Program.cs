@@ -28,15 +28,36 @@ Celular celular = new Celular()
     Tamanho = tamanho
 };
 
-Console.WriteLine($"O celular está desligado, deseja ligá-lo?(s/n): ");
-char ligarCelular = char.Parse(Console.ReadLine()!.ToLower() == "sim" ? "s" : "n");
+Menu(celular);
 
-// Se desligado
-if (celular.Ligado == false)
+
+static void Menu(Celular celular)
 {
-    Console.WriteLine(@$"
-    O celular está desligado, deseja ligá-lo?
+    bool abrirMenu = false;
+    char opcaoSelecionada;
+
+    do
+    {
+        // Console.Clear();
+        Console.ForegroundColor = ConsoleColor.Green;
+        // Se o celular estiver desligado
+        if (celular.Ligado == false)
+        {
+            Console.WriteLine(@$"
+    O celular está desligado. Ligue-o para realizar operações com o celular.
     
+    ===| MENU |===
+    ______________
+
+    1) Ligar celular
+    2) Desligar celular
+    
+    0) Sair
+    ");
+        }
+        else
+        {
+            Console.WriteLine(@$"    
     ===| MENU |===
     ______________
 
@@ -47,63 +68,75 @@ if (celular.Ligado == false)
     
     0) Sair
     ");
-    bool opcaoValida = false;
-    char opcaoSelecionada;
-    do
-    {
+        }
+
+        Console.ResetColor();
+
         opcaoSelecionada = char.Parse(Console.ReadLine()!);
-
-        if (opcaoSelecionada != 1 && opcaoSelecionada != 2 && opcaoSelecionada != 3 && opcaoSelecionada != 4 && opcaoSelecionada != 5 && opcaoSelecionada != 0)
+        // Se o celular estiver Desligado
+        if (celular.Ligado == false)
         {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Opção indisponível. Ligue o celular primeiro ou insira os números mostrados acima para cada opção.");
-            Console.ResetColor();
-            opcaoValida = false;
+            switch (opcaoSelecionada)
+            {
+                case '1':
+                    // Se o celular estiver ligado, imprimir na tela. Se estiver desligado, ligar, marcar como opção válida e imprimir
+                    celular.Ligar();
+                    abrirMenu = true;
+                    break;
+
+                case '2':
+                    Console.Clear();
+                    Console.WriteLine($"O celular já está desligado.");
+                    abrirMenu = true;
+                    break;
+
+                case '0':
+                    abrirMenu = true;
+                    Environment.Exit(1);
+                    break;
+
+                default:
+                    Console.WriteLine($"Opção selecionada não correspondente, selecione como mostrado no Menu.");
+                    break;
+            }
         }
-        else
+        else // Se o celular estiver ligado
         {
-            opcaoValida = true;
+            switch (opcaoSelecionada)
+            {
+                case '1':
+                    Console.Clear();
+                    Console.WriteLine($"O celular já está ligado");
+                    break;
+
+                case '2':
+                    celular.Desligar();
+                    abrirMenu = true;
+                    break;
+
+                case '3':
+                    celular.FazerLigacao();
+                    abrirMenu = true;
+                    break;
+
+                case '4':
+                    celular.EnviarMensagem();
+                    abrirMenu = true;
+                    break;
+
+                case '0':
+                    abrirMenu = true;
+                    Environment.Exit(1);
+                    break;
+
+                default:
+                    Console.WriteLine($"Opção selecionada não correspondente, selecione como mostrado no Menu.");
+                    break;
+            }
+
         }
-    } while (opcaoValida);
 
-    switch (opcaoSelecionada)
-    {
-        case '1':
-            // Se o celular estiver ligado, imprimir na tela. Se estiver desligado, ligar, marcar como opção válida e imprimir
-            if (celular.Ligado)
-            {
-                Console.WriteLine($"O celular já está ligado");
-            }
-            else
-            {
-                celular.Ligar();
-                Console.WriteLine($"Celular ligado.");
-                opcaoValida = true;
-            }
-            break;
 
-        case '2':
-            celular.Desligar();
-            break;
-
-        case '3':
-            celular.FazerLigacao();
-            break;
-
-        case '4':
-            celular.EnviarMensagem();
-            break;
-
-        case '0':
-            Environment.Exit(1);
-            break;
-
-        default:
-
-            break;
-    }
-}
-else
-{
+    } while (abrirMenu == true);
 
 }

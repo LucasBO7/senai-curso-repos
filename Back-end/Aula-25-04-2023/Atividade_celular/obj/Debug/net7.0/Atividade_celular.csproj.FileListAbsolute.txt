@@ -1,0 +1,15 @@
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\bin\Debug\net7.0\Atividade_celular.exe
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\bin\Debug\net7.0\Atividade_celular.deps.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\bin\Debug\net7.0\Atividade_celular.runtimeconfig.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\bin\Debug\net7.0\Atividade_celular.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\bin\Debug\net7.0\Atividade_celular.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\obj\Debug\net7.0\Atividade_celular.csproj.AssemblyReference.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\obj\Debug\net7.0\Atividade_celular.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\obj\Debug\net7.0\Atividade_celular.AssemblyInfoInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\obj\Debug\net7.0\Atividade_celular.AssemblyInfo.cs
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\obj\Debug\net7.0\Atividade_celular.csproj.CoreCompileInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\obj\Debug\net7.0\Atividade_celular.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\obj\Debug\net7.0\refint\Atividade_celular.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\obj\Debug\net7.0\Atividade_celular.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\obj\Debug\net7.0\Atividade_celular.genruntimeconfig.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-25-04-2023\Atividade_celular\obj\Debug\net7.0\ref\Atividade_celular.dll

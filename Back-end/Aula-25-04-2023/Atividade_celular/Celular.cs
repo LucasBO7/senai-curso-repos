@@ -14,6 +14,7 @@ namespace Atividade_celular
 
         public void Ligar()
         {
+            Console.Clear();
             this.Ligado = true;
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"Celular Ligado!");
@@ -21,6 +22,7 @@ namespace Atividade_celular
         }
         public void Desligar()
         {
+            Console.Clear();
             this.Ligado = false;
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"Celular Desligado!");
@@ -29,11 +31,21 @@ namespace Atividade_celular
 
         public void FazerLigacao()
         {
-
+            Console.Clear();
+            Console.WriteLine($"Ligação Realizada!");
         }
         public void EnviarMensagem()
         {
-
+            Console.Clear();
+            Console.Write($"Para quem deseja enviar a mensagem?: ");
+            string destinatario = Console.ReadLine();
+            
+            Console.Write($"Insira a mensagem a ser enviada: ");
+            string mensagem = Console.ReadLine();
+            
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            Console.WriteLine($"Mensagem enviada para {destinatario}");
+            Console.ResetColor();
         }
     }
 }
