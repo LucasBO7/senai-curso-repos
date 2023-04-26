@@ -38,10 +38,10 @@ namespace Atividade_celular
         {
             Console.Clear();
             Console.Write($"Para quem deseja enviar a mensagem?: ");
-            string destinatario = Console.ReadLine();
+            string destinatario = Console.ReadLine()!;
             
             Console.Write($"Insira a mensagem a ser enviada: ");
-            string mensagem = Console.ReadLine();
+            string mensagem = Console.ReadLine()!;
             
             Console.BackgroundColor = ConsoleColor.Cyan;
             Console.WriteLine($"Mensagem enviada para {destinatario}");

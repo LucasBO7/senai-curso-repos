@@ -125,8 +125,8 @@ static void Menu(Celular celular)
                     break;
 
                 case '0':
-                    abrirMenu = true;
-                    Environment.Exit(1);
+                    abrirMenu = false;
+                    Environment.Exit(1); // Fecha o programa
                     break;
 
                 default:
