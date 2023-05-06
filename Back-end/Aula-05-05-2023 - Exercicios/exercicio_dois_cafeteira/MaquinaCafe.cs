@@ -7,7 +7,9 @@ namespace exercicio_dois_elevador
 {
     public class MaquinaCafe
     {
-        public float AcucarDisponivel { get; set; }
+        public float AcucarDisponivel { get; set; } = 800;
+        public string TipoCafe { get; set; }
+        public int VolumeCopo { get; set; }
 
 
         public void FazerCafe(float gramasPedidas)
@@ -15,8 +17,14 @@ namespace exercicio_dois_elevador
             // Se açúcar disponível for menor que as gramas pedidas ou igual a 0
             if (this.AcucarDisponivel < gramasPedidas || this.AcucarDisponivel == 0)
             {
-                
+                Console.WriteLine($"");
+
             }
+        }
+
+        public void FazerCafe()
+        {
+            Console.WriteLine($"Preparando café");
         }
     }
 }

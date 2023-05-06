@@ -1,0 +1,15 @@
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\bin\Debug\net7.0\exercicio_dois_elevador.exe
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\bin\Debug\net7.0\exercicio_dois_elevador.deps.json
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\bin\Debug\net7.0\exercicio_dois_elevador.runtimeconfig.json
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\bin\Debug\net7.0\exercicio_dois_elevador.dll
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\bin\Debug\net7.0\exercicio_dois_elevador.pdb
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\obj\Debug\net7.0\exercicio_dois_elevador.csproj.AssemblyReference.cache
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\obj\Debug\net7.0\exercicio_dois_elevador.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\obj\Debug\net7.0\exercicio_dois_elevador.AssemblyInfoInputs.cache
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\obj\Debug\net7.0\exercicio_dois_elevador.AssemblyInfo.cs
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\obj\Debug\net7.0\exercicio_dois_elevador.csproj.CoreCompileInputs.cache
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\obj\Debug\net7.0\exercicio_dois_elevador.dll
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\obj\Debug\net7.0\refint\exercicio_dois_elevador.dll
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\obj\Debug\net7.0\exercicio_dois_elevador.pdb
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\obj\Debug\net7.0\exercicio_dois_elevador.genruntimeconfig.cache
+C:\Users\cleb_\Desktop\senai-curso-repos\Back-end\Aula-05-05-2023 - Exercicios\exercicio_dois_cafeteira\obj\Debug\net7.0\ref\exercicio_dois_elevador.dll

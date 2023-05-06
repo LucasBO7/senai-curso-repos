@@ -8,26 +8,24 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\41365718875\\.nuget\\packages\\": {}
+    "C:\\Users\\cleb_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-05-05-2023 - Exercicios\\exercicio_dois_elevador\\exercicio_dois_elevador.csproj",
+      "projectUniqueName": "C:\\Users\\cleb_\\Desktop\\senai-curso-repos\\Back-end\\Aula-05-05-2023 - Exercicios\\exercicio_dois_cafeteira\\exercicio_dois_elevador.csproj",
       "projectName": "exercicio_dois_elevador",
-      "projectPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-05-05-2023 - Exercicios\\exercicio_dois_elevador\\exercicio_dois_elevador.csproj",
-      "packagesPath": "C:\\Users\\41365718875\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-05-05-2023 - Exercicios\\exercicio_dois_elevador\\obj\\",
+      "projectPath": "C:\\Users\\cleb_\\Desktop\\senai-curso-repos\\Back-end\\Aula-05-05-2023 - Exercicios\\exercicio_dois_cafeteira\\exercicio_dois_elevador.csproj",
+      "packagesPath": "C:\\Users\\cleb_\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cleb_\\Desktop\\senai-curso-repos\\Back-end\\Aula-05-05-2023 - Exercicios\\exercicio_dois_cafeteira\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\41365718875\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\cleb_\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }
