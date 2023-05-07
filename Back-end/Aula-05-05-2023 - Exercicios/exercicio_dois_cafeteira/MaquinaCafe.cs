@@ -5,21 +5,53 @@ using System.Threading.Tasks;
 
 namespace exercicio_dois_elevador
 {
-    public class MaquinaCafe
+public class MaquinaCafe
     {
         public float AcucarDisponivel { get; set; } = 800;
-        public string TipoCafe { get; set; }
+        public string? TipoCafe { get; set; }
         public int VolumeCopo { get; set; }
 
-
-        public void FazerCafe(float gramasPedidas)
+        public void FazerCafe(float acucar)
         {
-            // Se açúcar disponível for menor que as gramas pedidas ou igual a 0
-            if (this.AcucarDisponivel < gramasPedidas || this.AcucarDisponivel == 0)
+            // Enquanto pedir mais açúcar que o disponível e açúcar for menor que 0
+            do
             {
-                Console.WriteLine($"");
+                Console.WriteLine(
+                    @$"Quantidade de açúcar indisponível no momento.
+                Quantidade de açúcar disponível: {this.AcucarDisponivel}"
+                );
 
+                Console.Write($"Quantidade de açúcar desejada (em gramas): ");
+                acucar = float.Parse(Console.ReadLine()!);
+            } while (this.AcucarDisponivel < acucar && acucar < 0);
+
+            if (acucar > 0)
+            {
+                this.AcucarDisponivel -= acucar;
             }
+            else
+            {
+                Console.Write("Preparando o café com o mínimo");
+            }
+
+            // Impressão animação
+Console.Clear();
+Console.BackgroundColor = ConsoleColor.Red;
+Console.Write(@$"Preparando o café");
+
+int ultimoValor = 300;
+for (int i = 0; i < 4; i++) {
+    int valorLoop = i < 2 ? i : 2; // Recebe i enquanto for menor que 2, se maior que 2, recebe 2
+    int equacao =  + (ultimoValor + (valorLoop * 100));
+    ultimoValor = equacao;
+
+    Console.Write($".");
+    Console.Beep(equacao, 500);
+}
+Console.WriteLine();
+Console.ResetColor();
+
+
         }
 
         public void FazerCafe()

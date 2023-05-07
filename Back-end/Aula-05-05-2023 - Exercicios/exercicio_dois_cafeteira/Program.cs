@@ -120,22 +120,9 @@ switch (menuCafeSelecionado)
         break;
 }
 
-Console.Clear();
-Console.BackgroundColor = ConsoleColor.Red;
-Console.WriteLine(@$"Preparando o café");
-for (int i = 0; i < 3; i++) { 
-    Console.Write($".");
-    Console.Beep((1000 - (i * 200)), 500);
-    Thread.Sleep(1000);
-}
-Console.WriteLine();
-Console.ResetColor();
+Console.Write($"| Insira a quantidade de açúcar em gramas(g): ");
+float acucar = float.Parse(Console.ReadLine()!);
 
-Console.Beep(1000, 500);
-Thread.Sleep(500);
-Console.Beep(500, 500);
-Thread.Sleep(500);
-Console.Beep(500, 500);
-Thread.Sleep(500);
-Console.Beep(1000, 500);
+maquina_cafe.FazerCafe(acucar);
+
 Console.WriteLine(@$"Café {maquina_cafe.TipoCafe}, com {maquina_cafe.VolumeCopo}ml preparado com sucesso.");
