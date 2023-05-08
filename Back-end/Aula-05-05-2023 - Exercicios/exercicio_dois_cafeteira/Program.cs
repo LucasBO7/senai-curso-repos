@@ -121,8 +121,11 @@ switch (menuCafeSelecionado)
 }
 
 Console.Write($"| Insira a quantidade de açúcar em gramas(g): ");
-float acucar = float.Parse(Console.ReadLine()!);
 
-maquina_cafe.FazerCafe(acucar);
+float acucarInput = float.Parse(Console.ReadLine()!);
+// float res;
+// bool x = float.TryParse(acucar, out res);
+
+maquina_cafe.FazerCafe(acucarInput);
 
 Console.WriteLine(@$"Café {maquina_cafe.TipoCafe}, com {maquina_cafe.VolumeCopo}ml preparado com sucesso.");
