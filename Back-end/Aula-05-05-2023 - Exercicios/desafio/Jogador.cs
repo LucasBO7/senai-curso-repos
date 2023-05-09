@@ -9,7 +9,7 @@ namespace desafio
     {
         public string Name { get; set; }
         public DateOnly Birthdate { get; set; }
-        public string Nacionalidade { get; set; }
+        public string Nationality { get; set; }
         public float Height { get; set; }
         public float Weight { get; set; }
 
