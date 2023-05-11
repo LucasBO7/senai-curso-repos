@@ -1,0 +1,15 @@
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\bin\Debug\net7.0\Projeto_Produto_iInterface.exe
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\bin\Debug\net7.0\Projeto_Produto_iInterface.deps.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\bin\Debug\net7.0\Projeto_Produto_iInterface.runtimeconfig.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\bin\Debug\net7.0\Projeto_Produto_iInterface.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\bin\Debug\net7.0\Projeto_Produto_iInterface.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\obj\Debug\net7.0\Projeto_Produto_iInterface.csproj.AssemblyReference.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\obj\Debug\net7.0\Projeto_Produto_iInterface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\obj\Debug\net7.0\Projeto_Produto_iInterface.AssemblyInfoInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\obj\Debug\net7.0\Projeto_Produto_iInterface.AssemblyInfo.cs
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\obj\Debug\net7.0\Projeto_Produto_iInterface.csproj.CoreCompileInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\obj\Debug\net7.0\Projeto_Produto_iInterface.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\obj\Debug\net7.0\refint\Projeto_Produto_iInterface.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\obj\Debug\net7.0\Projeto_Produto_iInterface.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\obj\Debug\net7.0\Projeto_Produto_iInterface.genruntimeconfig.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-11-05-2023\Projeto_Produto_iInterface\obj\Debug\net7.0\ref\Projeto_Produto_iInterface.dll
