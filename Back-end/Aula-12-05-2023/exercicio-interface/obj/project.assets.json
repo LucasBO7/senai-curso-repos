@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\41365718875\\.nuget\\packages\\": {}
+    "C:\\Users\\Mila\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-12-05-2023\\exercicio-interface\\exercicio-interface.csproj",
+      "projectUniqueName": "C:\\Users\\Mila\\Desktop\\senai-curso-repos\\Back-end\\Aula-12-05-2023\\exercicio-interface\\exercicio-interface.csproj",
       "projectName": "exercicio-interface",
-      "projectPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-12-05-2023\\exercicio-interface\\exercicio-interface.csproj",
-      "packagesPath": "C:\\Users\\41365718875\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end\\Aula-12-05-2023\\exercicio-interface\\obj\\",
+      "projectPath": "C:\\Users\\Mila\\Desktop\\senai-curso-repos\\Back-end\\Aula-12-05-2023\\exercicio-interface\\exercicio-interface.csproj",
+      "packagesPath": "C:\\Users\\Mila\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mila\\Desktop\\senai-curso-repos\\Back-end\\Aula-12-05-2023\\exercicio-interface\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\41365718875\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mila\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

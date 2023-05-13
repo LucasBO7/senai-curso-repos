@@ -4,16 +4,35 @@ namespace exercicio_interface
 {
     public class Agenda : IAgenda
     {
-        List<Contato> contatos = new List<Contato>();
+        public List<Contato> contatos = new List<Contato>();
 
         public void Adicionar(Contato _contato)
         {
-            throw new NotImplementedException();
+            contatos.Add(_contato);
+
+            // throw new NotImplementedException();
         }
 
         public void Listar()
         {
-            throw new NotImplementedException();
+            if (contatos.Any())
+            {
+                foreach (var item in contatos)
+                {
+                    Console.WriteLine(@$"
+                {item.Nome}
+                {item.Email}
+                {item.Telefone}
+                _____________________________________
+                ");
+
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Não há nenhum contato salvo.");
+            }
+            // throw new NotImplementedException();
         }
     }
 }
