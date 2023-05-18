@@ -8,8 +8,9 @@ namespace Projeto_Produtos
 
         public Login()
         {
-            Produto novoProduto = new Produto();
             Usuario usuario = new Usuario();
+            Produto novoProduto = new Produto();
+            Marca marca = new Marca();
             Logar(usuario);
 
             string menuOpcaoSelcionada;
@@ -19,6 +20,7 @@ namespace Projeto_Produtos
 
                 do
                 {
+                    Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine(@$"
  ___________________________________
 |               MENU                |
@@ -36,8 +38,21 @@ namespace Projeto_Produtos
 | [0] Sair                          |
 |___________________________________|
 ");
+                    Console.ResetColor();
+
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     Console.Write("Insira a opção que deseja acessar: ");
                     menuOpcaoSelcionada = Console.ReadLine()!.ToLower();
+                    Console.ResetColor();
+
+                    Console.Clear();
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    if (menuOpcaoSelcionada != "1" && menuOpcaoSelcionada != "2" && menuOpcaoSelcionada != "3" && menuOpcaoSelcionada != "4" && menuOpcaoSelcionada != "5" && menuOpcaoSelcionada != "6" && menuOpcaoSelcionada != "0")
+                    {
+                        Console.WriteLine($"OPÇÃO INVÁLIDA! selecione uma das opções escritas!");
+                    }
+                    Console.ResetColor();
+
                 } while (menuOpcaoSelcionada != "1" && menuOpcaoSelcionada != "2" && menuOpcaoSelcionada != "3" && menuOpcaoSelcionada != "4" && menuOpcaoSelcionada != "5" && menuOpcaoSelcionada != "6" && menuOpcaoSelcionada != "0");
 
 
@@ -58,12 +73,17 @@ namespace Projeto_Produtos
                         break;
 
                     case "4":
+                        marca.Cadastrar();
                         break;
 
                     case "5":
+                        Console.Write($"Insira o código do produto a ser deletado: ");
+                        int codigoMarca = int.Parse(Console.ReadLine()!);
+                        marca.Deletar(codigoMarca);
                         break;
 
                     case "6":
+                        marca.Listar();
                         break;
 
                     default:
@@ -112,9 +132,11 @@ ___________ LOGIN ___________
             };
 
             Logado = true;
+            Console.Clear();
             Console.WriteLine($"Login realizado com sucesso!");
             Console.ResetColor();
-
+            Thread.Sleep(1000);
+            Console.Clear();
             return "";
         }
 
