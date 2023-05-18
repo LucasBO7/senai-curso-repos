@@ -1,0 +1,15 @@
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\bin\Debug\net7.0\Projeto_Produtos.exe
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\bin\Debug\net7.0\Projeto_Produtos.deps.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\bin\Debug\net7.0\Projeto_Produtos.runtimeconfig.json
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\bin\Debug\net7.0\Projeto_Produtos.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\bin\Debug\net7.0\Projeto_Produtos.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\obj\Debug\net7.0\Projeto_Produtos.csproj.AssemblyReference.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\obj\Debug\net7.0\Projeto_Produtos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\obj\Debug\net7.0\Projeto_Produtos.AssemblyInfoInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\obj\Debug\net7.0\Projeto_Produtos.AssemblyInfo.cs
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\obj\Debug\net7.0\Projeto_Produtos.csproj.CoreCompileInputs.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\obj\Debug\net7.0\Projeto_Produtos.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\obj\Debug\net7.0\refint\Projeto_Produtos.dll
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\obj\Debug\net7.0\Projeto_Produtos.pdb
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\obj\Debug\net7.0\Projeto_Produtos.genruntimeconfig.cache
+C:\Users\41365718875\Desktop\senai-curso-repos\Back-end\Aula-16-05-2023 - Projeto\Projeto_Produtos\obj\Debug\net7.0\ref\Projeto_Produtos.dll
