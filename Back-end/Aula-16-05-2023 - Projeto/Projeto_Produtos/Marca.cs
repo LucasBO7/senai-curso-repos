@@ -16,7 +16,7 @@ namespace Projeto_Produtos
             Cadastrar();
         }
 
-        public void Cadastrar()
+        public Marca Cadastrar()
         {
             Marca _marca = new Marca();
 
@@ -33,9 +33,18 @@ namespace Projeto_Produtos
             Console.WriteLine($"Pressione a tecla ENTER para prosseguir...");
             Console.ReadLine();
             Console.ResetColor();
+            Console.Clear();
 
             // Adiciona na lista de marcas
             ListaDeMarcas.Add(_marca);
+
+            return _marca;
+        }
+
+        public Marca Cadastrar(Marca _marca)
+        {
+            ListaDeMarcas.Add(_marca);
+            return _marca;
         }
 
         public void Listar()
@@ -92,13 +101,22 @@ _____________________________________________________
                 if (indexMarcaPesquisada == -1)
                 {
                     Console.WriteLine($"Nenhum produto do código inserido encontrado");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine($"Pressione a tecla ENTER para prosseguir...");
+                    Console.ReadLine();
+                    Console.ResetColor();
+                    Console.Clear();
                 }
                 else
                 {
                     // Remove o objeto
                     ListaDeMarcas.RemoveAt(indexMarcaPesquisada);
                     Console.WriteLine($"Marca deletada com sucesso!");
-                    Thread.Sleep(1000);
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine($"Pressione a tecla ENTER para prosseguir...");
+                    Console.ReadLine();
+                    Console.ResetColor();
+                    Console.Clear();
                 }
             }
             else
@@ -106,6 +124,11 @@ _____________________________________________________
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Não há nenhum produto salvo.");
                 Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine($"Pressione a tecla ENTER para prosseguir...");
+                Console.ReadLine();
+                Console.ResetColor();
+                Console.Clear();
             }
         }
 

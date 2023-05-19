@@ -59,7 +59,7 @@ namespace Projeto_Produtos
                 switch (menuOpcaoSelcionada)
                 {
                     case "1":
-                        novoProduto.Cadastrar();
+                        novoProduto.Cadastrar(marca, usuario);
                         break;
 
                     case "2":
@@ -97,7 +97,11 @@ namespace Projeto_Produtos
 
         public string Logar(Usuario _usuario)
         {
-            Usuario usuarioSalvo = new Usuario();
+            Usuario usuarioSalvo = new Usuario()
+            {
+                Email = "nb@gmail.com",
+                Senha = "nbcz"
+            };
             string email;
             string senha;
 
@@ -115,7 +119,7 @@ ___________ LOGIN ___________
                 senha = Console.ReadLine()!;
                 Console.WriteLine($"|____________________________");
 
-                if (email != usuarioSalvo.Nome && senha != usuarioSalvo.Senha)
+                if (email != usuarioSalvo.Email || senha != usuarioSalvo.Senha)
                 {
                     Console.Clear();
                     Console.BackgroundColor = ConsoleColor.Red;
@@ -123,7 +127,7 @@ ___________ LOGIN ___________
                     Console.ResetColor();
                 }
 
-            } while (email != usuarioSalvo.Nome && senha != usuarioSalvo.Senha);
+            } while (email != usuarioSalvo.Email || senha != usuarioSalvo.Senha);
 
             _usuario = new Usuario()
             {

@@ -6,12 +6,12 @@ namespace Projeto_Produtos
         public string? Nome { get; set; }
         public float Preco { get; set; }
         public DateTime DataCadastro { get; set; } = DateTime.Now;
-        public Marca? Marca { get; set; }
-        public Usuario? AutoriaCadastro { get; set; }
+        public Marca Marca { get; set; }
+        public Usuario AutoriaCadastro { get; set; }
         List<Produto> ListaDeProdutos = new List<Produto>();
 
 
-        public void Cadastrar()
+        public void Cadastrar(Marca _marca, Usuario _usuario)
         {
             Produto novoProduto = new Produto();
 
@@ -32,35 +32,37 @@ namespace Projeto_Produtos
             } while (ListaDeProdutos.Any(produto => produto.Codigo == novoProduto.Codigo));
 
 
-
             Console.Write($"Nome do produto: ");
             novoProduto.Nome = Console.ReadLine()!;
 
             Console.Write($"Preço: ");
             novoProduto.Preco = float.Parse(Console.ReadLine()!);
-            Console.WriteLine();
-            Console.ResetColor();
 
             Console.Write($"Código da marca: ");
-            novoProduto.Marca.Codigo = int.Parse(Console.ReadLine()!);
+            int codigo = int.Parse(Console.ReadLine()!);
 
             Console.Write($"Nome da marca: ");
-            novoProduto.Marca.NomeMarca = Console.ReadLine()!;
+            string nomeMarca = Console.ReadLine()!;
 
-//             OK	RECEBER Código e Nome da marca
-// 	SE Código existir... Salvar na Produto.Marca a Marca
-// 	SE Código não existir... Cadastrar()
-// SE Código for novo e Nome for Novo
+            novoProduto.Marca = new Marca()
+            {
+                Codigo = codigo,
+                NomeMarca = nomeMarca
+            };
 
-            int indexPesquisado = Marca.ListaDeMarcas.FindIndex(marca => marca.Codigo == novoProduto.Marca.Codigo && marca.NomeMarca == novoProduto.Marca.NomeMarca);
+            this.AutoriaCadastro = _usuario;
+
+            Console.ResetColor();
+            //             OK	RECEBER Código e Nome da marca
+            // 	SE Código existir... Salvar na Produto.Marca a Marca
+            // 	SE Código não existir... Cadastrar
+
+
+            int indexPesquisado = _marca.ListaDeMarcas.FindIndex(marca => marca.Codigo == novoProduto.Marca.Codigo && marca.NomeMarca == novoProduto.Marca.NomeMarca);
 
             if (indexPesquisado == -1)
             {
-                Console.WriteLine($"Criar nova Marca, não encontrada na lista");
-            }
-            else
-            {
-                Console.WriteLine($"Marca já existente, pegar a marca");
+                _marca.Cadastrar(novoProduto.Marca);
             }
 
             Console.ResetColor();
@@ -68,6 +70,7 @@ namespace Projeto_Produtos
             Console.Write($"Pressione a tecla ENTER para prosseguir...");
             Console.ReadLine();
             Console.ResetColor();
+            Console.Clear();
 
             ListaDeProdutos.Add(novoProduto);
 
@@ -84,13 +87,22 @@ namespace Projeto_Produtos
                 if (indexProdutoPesquisada == -1)
                 {
                     Console.WriteLine($"Nenhum produto do código inserido encontrado");
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine($"Pressione a tecla ENTER para prosseguir...");
+                    Console.ReadLine();
+                    Console.ResetColor();
+                    Console.Clear();
                 }
                 else
                 {
                     // Remove o objeto
                     ListaDeProdutos.RemoveAt(indexProdutoPesquisada);
                     Console.WriteLine($"Produto deletado com sucesso!");
-                    Thread.Sleep(1000);
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                    Console.WriteLine($"Pressione a tecla ENTER para prosseguir...");
+                    Console.ReadLine();
+                    Console.ResetColor();
+                    Console.Clear();
                 }
             }
             else
@@ -98,6 +110,11 @@ namespace Projeto_Produtos
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Não há nenhum produto salvo.");
                 Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine($"Pressione a tecla ENTER para prosseguir...");
+                Console.ReadLine();
+                Console.ResetColor();
+                Console.Clear();
             }
         }
 
@@ -128,7 +145,10 @@ _____________________________________________________
 Código: {item.Codigo}
 Nome: {item.Nome}
 Preço: {item.Preco:C2}
+Nome da marca: {item.Marca.NomeMarca}
+Código da marca: {item.Marca.Codigo}
 Data do Cadastro: {item.DataCadastro.ToShortDateString()} - {item.DataCadastro.ToLongTimeString()}
+Autor do cadastro: {item.AutoriaCadastro}
 _____________________________________________________
                 ");
                 }

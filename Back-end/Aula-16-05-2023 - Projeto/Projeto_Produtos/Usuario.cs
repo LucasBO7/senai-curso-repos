@@ -8,17 +8,6 @@ namespace Projeto_Produtos
         public string? Senha { get; set; } = "nbcz";
         public DateTime DataCadastro { get; set; } = DateTime.Now;
 
-        public Usuario()
-        {
-            
-        }
-
-
-        public void Listar()
-        {
-
-        }
-
         public void Cadastrar(Usuario _usuario)
         {
             Console.WriteLine($"___________ CADASTRO USUÁRIO ___________");
