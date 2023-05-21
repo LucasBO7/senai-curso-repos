@@ -2,17 +2,40 @@
     font-family: "Roboto-Black";
     src: url(../assets/fonts/Roboto/Roboto-Black.ttf);
 }
+
 @font-face {
     font-family: "Roboto-Regular";
     src: url(../assets/fonts/Roboto/Roboto-Regular.ttf);
 }
+
 @font-face {
     font-family: "Roboto-Medium";
     src: url(../assets/fonts/Roboto/Roboto-Medium.ttf);
 }
+
 @font-face {
     font-family: "Poppins-Bold";
     src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(../assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "Rubik-Regular";
+    src: url(../assets/fonts/Rubik/static/Rubik-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url(../assets/fonts/Inter/static/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Inter-Bold";
+    src: url(../assets/fonts/Inter/static/Inter-Bold.ttf);
 }
 
 /* Reset de propriedades */
@@ -51,5 +74,33 @@
 .link a {
     font-family: "Roboto-Regular";
     font-size: 14px;
+    color: white;
+}
+
+.title {
+    font-family: 'Poppins-Bold';
+    font-size: 55px;
+    word-spacing: 1%;
+    color: black;
+}
+
+.subtitle {
+    font-family: 'Poppins-Bold';
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.button-1 {
+    border: 1px solid #D5CBD5;
+    border-radius: 50px;
+
+    color: #c485cc;
+    font-family: 'Poppins-Bold';
+    font-size: 14px;
+    cursor: pointer;
+    transition: ease 1s background-color;
+}
+.button-1:hover{
+    background-color: #c485cc;
     color: white;
 }
