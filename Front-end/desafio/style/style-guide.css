@@ -100,7 +100,22 @@
     cursor: pointer;
     transition: ease 1s background-color;
 }
-.button-1:hover{
+
+.button-1:hover {
     background-color: #c485cc;
     color: white;
+}
+
+.price {
+    font-family: 'Inter-Bold';
+    font-size: 14px;
+
+    margin-top: 5px;
+    color: black;
+}
+
+.h3-text {
+    font-family: 'Poppins-SemiBold';
+    font-size: 23px;
+    word-spacing: 2%;
 }
