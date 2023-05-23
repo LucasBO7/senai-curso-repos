@@ -308,6 +308,14 @@ section figure {
     height: 771px;
 }
 
+#some-products-section>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 60px 0;
+}
+
 #some-products-section #text-container {
     display: flex;
     justify-content: space-between;
@@ -337,15 +345,16 @@ section figure {
     text-decoration-thickness: 2px;
 }
 
-#some-products-section #cards{
+#some-products-section #cards {
     display: flex;
     justify-content: space-between;
 }
-#some-products-section #cards article{
+
+#some-products-section #cards article {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    
+
     height: 431px;
     width: 269px;
     padding: 0px 30px;
@@ -354,11 +363,15 @@ section figure {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.377);
 }
 
-#some-products-section #cards article h3{
+#some-products-section #cards article h2 {
+    font-family: 'Poppins-Bold';
+}
+
+#some-products-section #cards article h3 {
     position: absolute;
 }
 
-#some-products-section #cards article a{
+#some-products-section #cards article a {
     position: relative;
     right: -150px;
     display: flex;
@@ -371,8 +384,40 @@ section figure {
 
 }
 
-#some-products-section #cards article > img {
+#some-products-section #cards article>img {
     display: flex;
     align-self: center;
     height: 205px;
+}
+
+
+#some-products-section #change-controllers-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+#some-products-section #change-controllers-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+}
+
+
+
+
+/* OFFERS SECTION */
+#offers-section {
+    height: 768px;
+}
+
+#offers-section #titles{
+    display: flex;
+    justify-content: space-between;
 }
