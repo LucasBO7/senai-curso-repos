@@ -415,6 +415,8 @@ section figure {
 /* OFFERS SECTION */
 #offers-section {
     height: 768px;
+
+    background-color: #FDF2FF;
 }
 
 #offers-section #titles{
