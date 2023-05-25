@@ -60,8 +60,10 @@ namespace console_mvc.Model
         // método para inserir um produto na linha do csv
         public void Inserir(Produto p)
         {
+            // Array que armazena as linhas obtidas pelo método PrepararLinhasCSV
             string[] linhas = { PrepararLinhasCSV(p) };
 
+            // inserir todas as linhas no arquivo dentro do PATH
             File.AppendAllLines(Path, linhas);
         }
     }
