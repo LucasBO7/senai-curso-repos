@@ -5,4 +5,5 @@ using console_mvc.View;
 Produto program = new Produto();
 ProdutoController controller = new ProdutoController();
 controller.ListarProdutos();
-controller.CadastrarProduto();
+controller.RemoverProduto();
+// controller.CadastrarProduto();

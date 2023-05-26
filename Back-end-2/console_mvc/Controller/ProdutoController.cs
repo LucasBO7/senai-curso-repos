@@ -23,6 +23,11 @@ namespace console_mvc.Controller
             produto.Inserir(novoProduto);
             ListarProdutos();
         }
-        
+
+        public void RemoverProduto()
+        {
+            
+        }
+
     }
 }

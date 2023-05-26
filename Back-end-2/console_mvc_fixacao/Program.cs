@@ -2,3 +2,4 @@
 
 EventoController controller = new EventoController();
 controller.ListarEventos();
+controller.CriarEvento();

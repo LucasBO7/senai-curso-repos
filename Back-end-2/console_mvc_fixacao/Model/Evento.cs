@@ -57,13 +57,25 @@ namespace console_mvc_fixacao.Model
             return $"{evento.Nome};{evento.Descricao};{evento.Data}";
         }
 
-        public void Inserir()
+        public void Inserir(Evento evento)
         {
-            // Ler os dados do arquivo
-            string[] linhas = File.ReadAllLines(Path);
+            // Recebe o dado inserido já convertido em linha
+            string[] linhas = { PrepararDadosParaLinha(evento) };
 
             // PrepararDadosParaLinha(evento);
+            File.AppendAllLines(Path, linhas);
+        }
 
+        public void Remover(Evento evento)
+        {
+            // Recebe os dados do banco de dados
+            List<Evento> eventos = LerDadosBC();
+
+            // Pesquisa um objeto
+            int indexEventoPesquisado = eventos.FindIndex(e => e.Nome == evento.Nome && e.Data == evento.Data);
+
+            // Remover evento pesquisado
+            eventos.RemoveAt(indexEventoPesquisado);
         }
 
     }

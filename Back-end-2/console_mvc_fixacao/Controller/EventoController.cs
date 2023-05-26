@@ -17,7 +17,18 @@ namespace console_mvc_fixacao.Controller
 
         public void CriarEvento()
         {
-            
+            Evento novoEvento = eventoView.Cadastrar();
+            evento.Inserir(novoEvento);
+
+            ListarEventos();
+        }
+
+        public void RemoverEvento()
+        {
+            Evento eventoASerRemovido = eventoView.Cadastrar();
+            evento.Remover(eventoASerRemovido);
+
+            ListarEventos();
         }
     }
 }
