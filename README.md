@@ -3,6 +3,7 @@ Repositório para Atividades e projetos criados durante o Curso Técnico de Dese
 Divdidos em Front-end, Back-end.
 
 PRINCIPAIS PROJETOS
+
 Site do Projeto Gamer
 https://senai-curso-repos-gxsp9hzr1-lucasbo7.vercel.app
 
