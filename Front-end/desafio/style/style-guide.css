@@ -14,6 +14,11 @@
 }
 
 @font-face {
+    font-family: "Poppins-Regular";
+    src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
     font-family: "Poppins-Bold";
     src: url(../assets/fonts/Poppins/Poppins-Bold.ttf);
 }
@@ -31,6 +36,10 @@
 @font-face {
     font-family: "Inter-Regular";
     src: url(../assets/fonts/Inter/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: "Inter-SemiBold";
+    src: url(../assets/fonts/Inter/static/Inter-SemiBold.ttf);
 }
 
 @font-face {
@@ -60,6 +69,7 @@
     color: white;
     text-transform: uppercase;
     font-family: "Roboto-Black";
+    cursor: pointer;
 }
 
 .input-1 {
