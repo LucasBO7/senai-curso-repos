@@ -23,6 +23,7 @@ header .main-links {
     width: 343px;
     transition: color ease-in-out 0.5s;
 }
+
 header .main-links a:hover {
     color: #FF0099;
 }
@@ -50,4 +51,29 @@ header .action-icons-container a {
 
 header .action-icons-container a:hover {
     background-color: #FF0099;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+
+    header,
+    #main-section {
+        width: 100vw;
+    }
+
+    header .main-links {
+        position: absolute;
+        flex-direction: column;
+
+        height: 500px;
+        width: 300px;
+        
+        background-color: red;
+
+    }
+
+    header img {
+        width: 100px;
+    }
 }
