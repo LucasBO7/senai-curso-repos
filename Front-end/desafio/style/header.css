@@ -60,17 +60,57 @@ header .action-icons-container a:hover {
     header,
     #main-section {
         width: 100vw;
+        height: 166px;
+    }
+
+    header .logo{
+
     }
 
     header .main-links {
-        position: absolute;
         flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 1;
+
+        position: absolute;
+        top: 166px;
+        left: 0;
 
         height: 500px;
         width: 300px;
-        
-        background-color: red;
 
+        background-image: linear-gradient(to right, hsla(281, 54%, 60%, 0.7), hsla(249, 62%, 43%, 0.7));
+        backdrop-filter: blur(10px);
+    }
+
+    header .main-links a {
+        display:  flex;
+        align-items: center;
+        justify-content: center;
+
+        border-bottom: 1px solid #FF0099;
+        height: 100%;
+    }
+    header .main-links a:last-of-type{
+        border-bottom: none;
+    }
+
+    header .action-icons-container{
+        width: 140px;
+    }
+
+    header .action-icons-container a{
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+    header .input-1{
+        position: absolute;
+        top: 90px;
+        left: 10%;
+
+        width: 300px !important;
+        
     }
 
     header img {
