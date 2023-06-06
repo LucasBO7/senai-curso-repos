@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "q2AeXtMsCpC3VvJkxN/TT62KEHx6hMUuDu5SsjxYmdE=",
+  "Hash": "N5ZJkL2+smCh4giP3QB9HsQCScKnZ2ZUaAldeQzv84c=",
   "Source": "Projeto_Gamer_mvc",
   "BasePath": "_content/Projeto_Gamer_mvc",
   "Mode": "Default",
@@ -83,6 +83,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\img\\Equipes\\chimpanzé.jpg",
+      "SourceId": "Projeto_Gamer_mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\",
+      "BasePath": "_content/Projeto_Gamer_mvc",
+      "RelativePath": "img/Equipes/chimpanzé.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\chimpanzé.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\img\\Equipes\\LINDO-SP.webp",
+      "SourceId": "Projeto_Gamer_mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\",
+      "BasePath": "_content/Projeto_Gamer_mvc",
+      "RelativePath": "img/Equipes/LINDO-SP.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\LINDO-SP.webp"
     },
     {
       "Identity": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\js\\site.js",

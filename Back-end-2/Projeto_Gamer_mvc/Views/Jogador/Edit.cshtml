@@ -1,0 +1,21 @@
+@model Jogador
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h1>Editar Jogador</h1>
+
+<form method="post" action="@Url.Action("Atualizar")">
+    <label for="">Nome</label>
+    <input type="text" name="Nome" required placeholder="Insira o nome do jogador...">
+    
+    <label for="">Email</label>
+    <input type="text" name="Email" required placeholder="Insira o email do jogador...">
+    
+    <label for="">Senha</label>
+    <input type="text" name="Senha" required placeholder="Insira a senha do jogador...">
+    
+    <label for="">Equipe</label>
+    <input type="text" name="IdEquipe" required value="@Model.IdEquipe" placeholder="Insira o nome do jogador...">
+</form>

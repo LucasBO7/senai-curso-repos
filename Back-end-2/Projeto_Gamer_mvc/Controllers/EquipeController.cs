@@ -68,6 +68,67 @@ namespace Projeto_Gamer_mvc.Controllers
             return LocalRedirect("~/Equipe/Listar");
         }
 
+        [Route("Excluir/{id}")]
+        public IActionResult Excluir(int id)
+        {
+            Equipe equipe = context.Equipe.First(e => e.IdEquipe == id);
+            context.Equipe.Remove(equipe);
+            context.SaveChanges();
+
+            return LocalRedirect("~/Equipe/Listar");
+        }
+
+        [Route("Editar/{id}")]
+        public IActionResult Editar(int id)
+        {
+            Equipe equipe = context.Equipe.First(e => e.IdEquipe == id);
+            ViewBag.Equipe = equipe;
+            return View("Edit");
+        }
+
+        [Route("Atualizar")]
+        public IActionResult Atualizar(IFormCollection form, Equipe equipe)
+        {
+            Equipe novaEquipe = new Equipe();
+            novaEquipe.Nome = equipe.Nome; // Passa o novo nome da Equipe
+
+            // Upload da imagem na equipe nova(atualizada)
+            if (form.Files.Count > 0)
+            {
+                var file = form.Files[0];
+                var folder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/img/Equipes");
+
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+
+                var path = Path.Combine(folder, file.FileName);
+
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+
+                novaEquipe.Imagem = file.FileName;
+            }
+            else
+            {
+                novaEquipe.Imagem = "padrao.png";
+            }
+
+            Equipe equipePesquisada = context.Equipe.First(e => e.IdEquipe == equipe.IdEquipe);
+
+            equipePesquisada.Nome = novaEquipe.Nome;
+            equipePesquisada.Imagem = novaEquipe.Imagem;
+
+            context.Equipe.Update(equipePesquisada);
+            context.SaveChanges();
+
+            return LocalRedirect("~/Equipe/Listar");
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
