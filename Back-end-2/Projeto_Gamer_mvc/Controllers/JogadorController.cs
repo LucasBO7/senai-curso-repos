@@ -21,6 +21,7 @@ namespace Projeto_Gamer_mvc.Controllers
         [Route("Listar")]
         public IActionResult Index()
         {
+            ViewBag.LoggedUserName = HttpContext.Session.GetString("UserName");
             ViewBag.Jogador = context.Jogador.ToList();
             ViewBag.Equipe = context.Equipe.ToList();
 
@@ -57,9 +58,41 @@ namespace Projeto_Gamer_mvc.Controllers
         [Route("Editar")]
         public IActionResult Editar(int id)
         {
+            ViewBag.LoggedUserName = HttpContext.Session.GetString("UserName");
             
-            
-            return;
+            Jogador jogadorPesquisado = context.Jogador.First(e => e.IdJogador == id);
+            ViewBag.Jogador = jogadorPesquisado;
+            ViewBag.Equipe = context.Equipe.ToList();
+
+            return View("Edit");
+        }
+
+        [Route("Atualizar")]
+        public IActionResult Atualizar(IFormCollection form)
+        {
+            // Passa os valores das propriedades do form para um objeto
+            Jogador novoJogador = new Jogador();
+
+            novoJogador.IdJogador = int.Parse(form["IdJogador"].ToString());
+            novoJogador.Nome = form["Nome"].ToString();
+            novoJogador.Email = form["Email"].ToString();
+            novoJogador.Senha = form["Senha"].ToString();
+            novoJogador.IdEquipe = int.Parse(form["IdEquipe"].ToString());
+
+            // Procura a equipe que será modificada
+            Jogador jogadorPesquisado = context.Jogador.First(j => j.IdJogador == novoJogador.IdJogador);
+
+            // Passa os valores do jogador criado para o jogador já existente
+            jogadorPesquisado.Nome = novoJogador.Nome;
+            jogadorPesquisado.Email = novoJogador.Email;
+            jogadorPesquisado.Senha = novoJogador.Senha;
+            jogadorPesquisado.IdEquipe = novoJogador.IdEquipe;
+            // jogadorPesquisado = novoJogador;
+
+            context.Jogador.Update(jogadorPesquisado);
+            context.SaveChanges();
+
+            return LocalRedirect("~/Jogador/Listar");
         }
 
 

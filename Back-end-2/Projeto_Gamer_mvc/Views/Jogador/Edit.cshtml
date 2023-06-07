@@ -7,15 +7,34 @@
 <h1>Editar Jogador</h1>
 
 <form method="post" action="@Url.Action("Atualizar")">
+    <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
+
     <label for="">Nome</label>
-    <input type="text" name="Nome" required placeholder="Insira o nome do jogador...">
-    
+    <input type="text" name="Nome" value="@ViewBag.Jogador.Nome" required placeholder="Insira o nome do jogador...">
+
     <label for="">Email</label>
-    <input type="text" name="Email" required placeholder="Insira o email do jogador...">
-    
+    <input type="text" name="Email" value="@ViewBag.Jogador.Email" required placeholder="Insira o email do jogador...">
+
     <label for="">Senha</label>
-    <input type="text" name="Senha" required placeholder="Insira a senha do jogador...">
-    
+    <input type="text" name="Senha" value="@ViewBag.Jogador.Senha" required placeholder="Insira a senha do jogador...">
+
     <label for="">Equipe</label>
-    <input type="text" name="IdEquipe" required value="@Model.IdEquipe" placeholder="Insira o nome do jogador...">
+    <select name="IdEquipe" id="IdEquipe">
+        <option value="0">Selecione uma equipe: </option>
+
+        @foreach (Equipe equipe in ViewBag.Equipe)
+        {
+            @if (equipe.IdEquipe == ViewBag.Jogador.IdEquipe)
+            {
+                <option value="@ViewBag.Jogador.IdEquipe" selected>@equipe.Nome</option>
+            }
+            else
+            {
+                <option value="@equipe.IdEquipe">@equipe.Nome</option>
+            }
+        }
+    </select>
+
+    <button type="submit">Cadastrar</button>
+
 </form>
