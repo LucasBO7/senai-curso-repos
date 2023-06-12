@@ -22,7 +22,7 @@ namespace Projeto_Gamer_mvc.Controllers
 
 
         [TempData]
-        public string Message { get; set; }
+        public string? Message { get; set; }
 
         Context context = new Context();
 
@@ -40,7 +40,7 @@ namespace Projeto_Gamer_mvc.Controllers
             string email = form["Email"].ToString();
             string senha = form["Senha"].ToString();
 
-            Jogador jogadorBuscado = context.Jogador.FirstOrDefault(j => j.Email == email && j.Senha == senha);
+            Jogador jogadorBuscado = context.Jogador.FirstOrDefault(j => j.Email == email && j.Senha == senha)!;
 
             // Lógica da sessão
 
