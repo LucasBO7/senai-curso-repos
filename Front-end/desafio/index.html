@@ -22,7 +22,7 @@
                 <input class="input-1" type="text" placeholder="Search">
 
                 <!-- Navigation Main Links -->
-                <nav class="link main-links">
+                <nav id="menu" class="link main-links menu">
                     <a href="">Store</a>
                     <a href="">Features</a>
                     <a href="">About</a>
@@ -32,17 +32,11 @@
 
                 <!-- Action Icons -->
                 <nav class="action-icons-container">
-                    <a href="">
-                        <img src="assets/icons/hearth-icon.svg" alt="">
-                    </a>
+                    <img src="assets/icons/hearth-icon.svg" alt="">
 
-                    <a href="">
-                        <img src="assets/icons/shop-icon.svg" alt="">
-                    </a>
+                    <img src="assets/icons/shop-icon.svg" alt="">
 
-                    <a href="">
-                        <img src="assets/icons/menu-icon.svg" alt="">
-                    </a>
+                    <img onclick="mostrarMenu()" src="assets/icons/menu-icon.svg" alt="">
                 </nav>
 
             </div>
@@ -451,9 +445,12 @@
                 <p>Copyright 2023. All Rights Reserved.</p>
 
                 <div id="social-networks">
-                    <a href=""> <img src="assets/icons/facebook-logo-borda.svg" alt="Logo Facebook, para a página de facebook do site"> </a>
-                    <a href=""> <img src="assets/icons/twitter-logo-borda.svg" alt="Logo Twitter, para a página de twitter do site"> </a>
-                    <a href=""> <img src="assets/icons/instagram-logo-borda.svg" alt="Logo Instagram, para a página de instagram do site"> </a>
+                    <a href=""> <img src="assets/icons/facebook-logo-borda.svg"
+                            alt="Logo Facebook, para a página de facebook do site"> </a>
+                    <a href=""> <img src="assets/icons/twitter-logo-borda.svg"
+                            alt="Logo Twitter, para a página de twitter do site"> </a>
+                    <a href=""> <img src="assets/icons/instagram-logo-borda.svg"
+                            alt="Logo Instagram, para a página de instagram do site"> </a>
                 </div>
 
                 <div>
@@ -463,6 +460,13 @@
         </div>
 
     </footer>
+
+    <script>
+        function mostrarMenu() {
+            // pega a navbar pelo id
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+    </script>
 
 </body>
 

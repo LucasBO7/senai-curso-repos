@@ -36,22 +36,28 @@ header .action-icons-container {
     width: 167px;
 }
 
-header .action-icons-container a {
+header .action-icons-container img {
     display: flex;
     align-items: center;
     justify-content: center;
 
     border: 2px solid white;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     padding: 5px;
     border-radius: 50%;
     transition: background-color ease 0.4s;
 }
 
-header .action-icons-container a:hover {
+header .action-icons-container img:hover {
     background-color: #FF0099;
 }
+
+.mostrar-menu {
+    left: 0 !important;
+}
+
+
 
 /* MEDIA QUERIES */
 
@@ -74,13 +80,15 @@ header .action-icons-container a:hover {
 
         position: absolute;
         top: 166px;
-        left: 0;
+        left: -100%;
 
         height: 500px;
         width: 300px;
 
         background-image: linear-gradient(to right, hsla(281, 54%, 60%, 0.7), hsla(249, 62%, 43%, 0.7));
         backdrop-filter: blur(10px);
+
+        transition: ease 1s left;
     }
 
     header .main-links a {
@@ -99,7 +107,7 @@ header .action-icons-container a:hover {
         width: 140px;
     }
 
-    header .action-icons-container a{
+    header .action-icons-container img{
         height: 40px !important;
         width: 40px !important;
     }
