@@ -21,7 +21,7 @@ namespace Projeto_Gamer_mvc.Controllers
         [Route("Listar")]
         public IActionResult Index()
         {
-            ViewBag.LoggedUserName = HttpContext.Session.GetString("UserName");
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             ViewBag.Jogador = context.Jogador.ToList();
             ViewBag.Equipe = context.Equipe.ToList();
 
