@@ -253,6 +253,10 @@
       "PackagePath": "staticwebassets\\css\\home.css"
     },
     {
+      "Id": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\css\\jogadores.css",
+      "PackagePath": "staticwebassets\\css\\jogadores.css"
+    },
+    {
       "Id": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
@@ -357,12 +361,24 @@
       "PackagePath": "staticwebassets\\images\\noticia8.png"
     },
     {
+      "Id": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\img\\Equipes\\Group 12.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Group 12.png"
+    },
+    {
       "Id": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\img\\Equipes\\LINDO-SP.webp",
       "PackagePath": "staticwebassets\\img\\Equipes\\LINDO-SP.webp"
     },
     {
+      "Id": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\img\\Equipes\\OIP.jfif",
+      "PackagePath": "staticwebassets\\img\\Equipes\\OIP.jfif"
+    },
+    {
       "Id": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\img\\Equipes\\chimpanzé.jpg",
       "PackagePath": "staticwebassets\\img\\Equipes\\chimpanzé.jpg"
+    },
+    {
+      "Id": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\img\\Equipes\\ponte-preta-logo-escudo-1-1.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\ponte-preta-logo-escudo-1-1.png"
     },
     {
       "Id": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\js\\site.js",

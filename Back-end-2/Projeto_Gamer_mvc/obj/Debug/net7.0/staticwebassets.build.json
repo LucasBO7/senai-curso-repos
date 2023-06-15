@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XAUveUCjLgQzokafs+//mQXnFvZMqbmuQiAFY5Y3IO4=",
+  "Hash": "PCByrhHtxdv9u6TqwR4qBC/TAIt8YlT4a9pRjEMwYCs=",
   "Source": "Projeto_Gamer_mvc",
   "BasePath": "_content/Projeto_Gamer_mvc",
   "Mode": "Default",
@@ -1105,6 +1105,23 @@
       "OriginalItemSpec": "wwwroot\\css\\home.css"
     },
     {
+      "Identity": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\css\\jogadores.css",
+      "SourceId": "Projeto_Gamer_mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\",
+      "BasePath": "_content/Projeto_Gamer_mvc",
+      "RelativePath": "css/jogadores.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\jogadores.css"
+    },
+    {
       "Identity": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\css\\login.css",
       "SourceId": "Projeto_Gamer_mvc",
       "SourceType": "Discovered",
@@ -1564,6 +1581,23 @@
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\chimpanzé.jpg"
     },
     {
+      "Identity": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\img\\Equipes\\Group 12.png",
+      "SourceId": "Projeto_Gamer_mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\",
+      "BasePath": "_content/Projeto_Gamer_mvc",
+      "RelativePath": "img/Equipes/Group 12.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\Group 12.png"
+    },
+    {
       "Identity": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\img\\Equipes\\LINDO-SP.webp",
       "SourceId": "Projeto_Gamer_mvc",
       "SourceType": "Discovered",
@@ -1579,6 +1613,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\LINDO-SP.webp"
+    },
+    {
+      "Identity": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\img\\Equipes\\OIP.jfif",
+      "SourceId": "Projeto_Gamer_mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\",
+      "BasePath": "_content/Projeto_Gamer_mvc",
+      "RelativePath": "img/Equipes/OIP.jfif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\OIP.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\img\\Equipes\\ponte-preta-logo-escudo-1-1.png",
+      "SourceId": "Projeto_Gamer_mvc",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\",
+      "BasePath": "_content/Projeto_Gamer_mvc",
+      "RelativePath": "img/Equipes/ponte-preta-logo-escudo-1-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\ponte-preta-logo-escudo-1-1.png"
     },
     {
       "Identity": "C:\\Users\\41365718875\\Desktop\\senai-curso-repos\\Back-end-2\\Projeto_Gamer_mvc\\wwwroot\\js\\site.js",
