@@ -15,6 +15,12 @@
         <div class="header-top">
             <div class="container-grid header-top-flex">
                 <div>
+                    @if (!String.IsNullOrEmpty(ViewBag.UserName))
+                    {
+                        <span class="phone-box">
+                            @ViewBag.UserName
+                        </span>
+                    }
                     <span class="phone-box">
                         <img src="~/assets/phone-icon.png" alt="phone icon" title="Ícone Telefone">
                         (11) 0900-1010
