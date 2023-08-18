@@ -1,6 +1,6 @@
 # senai-course-repos
 Repositório para Atividades e projetos criados durante o Curso Técnico de Desenvolvimento de Sistemas no SENAI Paulo Skaf.
-Divdidos em Front-end, Back-end.
+Divdidos em Front-end, Back-end e Back-end 2 (onde foi visto MVC)
 
 PRINCIPAIS PROJETOS
 
