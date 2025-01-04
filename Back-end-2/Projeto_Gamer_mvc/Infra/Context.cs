@@ -15,7 +15,7 @@ namespace Projeto_Gamer_mvc.Infra
             // Se NÃO estiver configurado
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source = NOTE18-S14; initial catalog = gamerTarde; User Id = sa; pwd = Senai@134; TrustServerCertificate = true;"); // 
+                optionsBuilder.UseSqlServer("Data Source = DESKTOP-8TTSKB5; initial catalog = projetoGamerDB; User Id = sa; pwd = sa1234; TrustServerCertificate = true;");
             }
         }
 

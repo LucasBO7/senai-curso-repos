@@ -52,7 +52,7 @@
                             <td>@jogador.IdJogador</td>
                             <td>@jogador.Nome</td>
                             <td>@jogador.Email</td>
-                            <td> <img src="/img/Equipes/@jogador.Equipe.Imagem" width="85px" alt=""> </td>
+                            <td> <img src="/img/Equipes/@jogador.Equipe.Imagem" height="50px" alt=""> </td>
                             <td> <a asp-area="Link para excluir jogador" asp-controller="Jogador" asp-action="Remover"
                                     asp-route-id="@jogador.IdJogador"> <img class="yellow-trash" src="~/assets/trash.png" alt=""> </a></td>
                             <td> <a asp-area="Link para editar jogador" asp-controller="Jogador" asp-action="Editar"

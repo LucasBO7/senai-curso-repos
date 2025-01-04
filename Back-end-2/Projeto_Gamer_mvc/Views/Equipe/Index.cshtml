@@ -26,8 +26,8 @@
                 @* <input class="campo-entrada" type="number" id="idEquipe" placeholder="Digite o Id da sua equipe:"> *@
                 <input class="campo-entrada" type="text" name="Nome" required placeholder="Digite o nome da sua equipe:">
                 <label class="foto" for="foto-file">
-                    Nenuma imagem selecionada...
-                    <input type="file" name="Imagem" id="foto-file">
+                    <span id="file-label">Nenuma imagem selecionada...</span>
+                    <input type="file" name="Imagem" id="foto-file" onchange="updateFileLabel()">
                 </label>
 
                 <button>Cadastro</button>
@@ -56,13 +56,13 @@
 
                             <td>
                                 <a asp-area="link para excluir time" asp-controller="Equipe" asp-action="Excluir"
-                                    asp-route-id="@equipe.IdEquipe">
+                                   asp-route-id="@equipe.IdEquipe">
                                     <img class="yellow-trash" src="~/assets/trash.png" alt="">
                                 </a>
                                 <a asp-area="link para editar o time" asp-controller="Equipe" asp-action="Editar"
-                                    asp-route-id="@equipe.IdEquipe">
+                                   asp-route-id="@equipe.IdEquipe">
                                     <img class="yellow-pencil" src="~/assets/pencil-icon.svg" alt="">
-                                    </a>
+                                </a>
                             </td>
                         </tr>
                     }
@@ -74,3 +74,17 @@
 
     </section>
 </main>
+
+<script>
+    // Atualiza o texto da label quando um arquivo é selecionado
+    function updateFileLabel() {
+        const fileInput = document.getElementById('foto-file');
+        const fileLabel = document.getElementById('file-label');
+
+        if (fileInput.files && fileInput.files.length > 0) {
+            fileLabel.textContent = fileInput.files[0].name;
+        } else {
+            fileLabel.textContent = 'Nenhuma imagem selecionada...';
+        }
+    }
+</script>

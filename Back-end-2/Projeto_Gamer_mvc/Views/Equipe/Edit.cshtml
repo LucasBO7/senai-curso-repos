@@ -15,7 +15,7 @@
         }
         else
         {
-            <form class="frm-cad-equipe" method="post" action="@Url.Action("Cadastrar")" enctype="multipart/form-data">
+            <form class="frm-cad-equipe" method="post" action="@Url.Action("Atualizar")" enctype="multipart/form-data">
                 <div class="cadequipe-titulo">
                     <h1>Cadastro de Equipes</h1>
                     <hr>
@@ -27,13 +27,13 @@
                 <label class="foto" for="foto-file">
                     @if (String.IsNullOrEmpty(ViewBag.Equipe.Imagem))
                     {
-                        <p>Nenhuma imagem selecionada...</p>
+                        <p id="file-label">Nenhuma imagem selecionada...</p>
                     }
                     else
                     {
-                        <p>@ViewBag.Equipe.Imagem</p>
+                        <p id="file-label">@ViewBag.Equipe.Imagem</p>
                     }
-                    <input type="file" name="Imagem" id="foto-file" value="@ViewBag.Equipe.Imagem">
+                    <input type="file" name="Imagem" id="foto-file" value="@ViewBag.Equipe.Imagem" onchange="updateFileLabel()">
                 </label>
 
                 <button>Atualizar</button>
@@ -47,3 +47,17 @@
     </section>
 
 </main>
+
+<script>
+    // Atualiza o texto da label quando um arquivo é selecionado
+    function updateFileLabel() {
+        const fileInput = document.getElementById('foto-file');
+        const fileLabel = document.getElementById('file-label');
+
+        if (fileInput.files && fileInput.files.length > 0) {
+            fileLabel.textContent = fileInput.files[0].name;
+        } else {
+            fileLabel.textContent = 'Nenhuma imagem selecionada...';
+        }
+    }
+</script>
